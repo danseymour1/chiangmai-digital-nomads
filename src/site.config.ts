@@ -25,7 +25,7 @@ export const site = {
 
   // The big home-page headline. Leave blank to auto-use
   // "Live and work remotely in {place}."
-  heroHeadline: "Thailand's digital nomad capital, without the guesswork.",
+  heroHeadline: "Chiang Mai, decoded.",
 
   // Longer description for the home page hero subheading.
   heroSubheading:
