@@ -10,7 +10,8 @@ This is an Astro site. Blog posts are Markdown files in src/content/posts/. Push
 Given a title, create ONE file in src/content/posts/ with frontmatter: title (the full headline), description (~150 chars, the Google snippet), pubDate (today), tags (one or two), image/imageAlt (see Images), keyAnswer (a direct 2–3 sentence TL;DR answer that Google and AI tools quote), faqs (3–5 real questions people Google, each answered in 1–3 sentences). Then write the body with ## headings phrased as the questions people search, answered right underneath.
 
 ## Voice
-- Third-person, giving clear direct advice. No "we". No em-dashes (use commas, brackets or full stops instead).
+- Third-person, giving clear direct advice. No "we".
+- Em-dashes only in headings, e.g. "## 1. Nimman — best for nomads". Never in body text, lists, frontmatter or FAQs (use commas, brackets or full stops instead).
 - Formal but friendly: professional, clear and warm, not chatty. No emojis, no diary asides, no self-deprecation. A knowledgeable local writing a proper guide.
 - British English throughout.
 - Grounded and credible, written as if from direct experience of Chiang Mai.
