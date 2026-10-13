@@ -1,0 +1,180 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { site } from "../site.config.ts";
+
+const posts = (await getCollection("posts", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 4);
+---
+
+<BaseLayout
+  title={site.name}
+  description={site.tagline}
+  path="/"
+  type="website"
+>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="hero-kicker">{site.place}, Thailand</p>
+      <h1>{site.heroHeadline ?? `Live and work remotely in ${site.place}.`}</h1>
+      <p class="hero-sub">{site.heroSubheading}</p>
+      <div class="hero-actions">
+        <a href="/blog" class="btn">Read the guides</a>
+        <a href="/community" class="btn btn--ghost">Share your story</a>
+      </div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </section>
+
+  <section class="wrap home-section">
+    <div class="section-head">
+      <h2>Latest guides</h2>
+      <a href="/blog" class="section-link">All guides</a>
+    </div>
+    <div class="post-list">
+      {posts.length === 0 ? (
+        <p class="empty">
+          No guides published yet. Add your first one in
+          <code>src/content/posts/</code>.
+        </p>
+      ) : (
+        posts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            pubDate={post.data.pubDate}
+            tags={post.data.tags}
+          />
+        ))
+      )}
+    </div>
+  </section>
+
+  <section class="community-teaser">
+    <div class="wrap community-inner">
+      <h2>This is a community, not just a guide.</h2>
+      <p>
+        Living in {site.place} or just passing through? Share your
+        story — how you found your flat, your favourite café to work
+        from, what surprised you. Add a few photos and we'll turn it
+        into a post other nomads will actually read.
+      </p>
+      <a href="/community" class="btn">Share your story</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--mist);
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    padding-top: clamp(3.5rem, 9vw, 7rem);
+    padding-bottom: clamp(3rem, 8vw, 6rem);
+    max-width: 56rem;
+  }
+  .hero-kicker {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--brand);
+    margin: 0 0 0.6rem;
+  }
+  .hero h1 {
+    margin: 0 0 0.7rem;
+    max-width: 16ch;
+  }
+  .hero-sub {
+    font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+    color: var(--ink-soft);
+    max-width: 54ch;
+    margin: 0 0 1.8rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  .hero-glow {
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 55vw;
+    height: 55vw;
+    max-width: 620px;
+    max-height: 620px;
+    background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--accent) 30%, transparent),
+      transparent 62%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .home-section {
+    padding-top: var(--space-section);
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-head h2 {
+    margin: 0;
+  }
+  .section-link {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .post-list {
+    border-bottom: 1px solid var(--mist);
+  }
+  .empty {
+    padding: 2rem 0;
+    color: var(--ink-soft);
+  }
+  .empty code {
+    background: var(--paper-raised);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+  }
+
+  .community-teaser {
+    margin-top: var(--space-section);
+    background: var(--brand);
+    color: var(--paper-raised);
+  }
+  .community-inner {
+    padding-block: clamp(3rem, 7vw, 5rem);
+    max-width: 52rem;
+  }
+  .community-teaser h2 {
+    color: var(--paper-raised);
+    max-width: 20ch;
+  }
+  .community-teaser p {
+    color: color-mix(in srgb, var(--paper-raised) 88%, transparent);
+    max-width: 56ch;
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+  }
+  .community-teaser .btn {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+  .community-teaser .btn:hover {
+    background: color-mix(in srgb, var(--accent) 88%, white);
+    color: var(--ink);
+  }
+</style>

@@ -1,0 +1,64 @@
+---
+/* =============================================================
+   BASE LAYOUT  —  wraps every page.
+   Loads fonts, injects your brand colours from site.config,
+   and adds the header + footer. You rarely touch this.
+   ============================================================= */
+import { site } from "../site.config.ts";
+import Seo from "../components/Seo.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  type?: "website" | "article";
+  publishedDate?: Date;
+  updatedDate?: Date;
+  schema?: Record<string, unknown>[];
+}
+
+const props = Astro.props;
+
+const themeStyle = `--brand:${site.theme.brand};--accent:${site.theme.accent};`;
+---
+
+<!doctype html>
+<html lang={site.language} style={themeStyle}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={site.name}
+      href="/rss.xml"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <Seo {...props} />
+  </head>
+  <body>
+    <a href="#main" class="sr-only">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

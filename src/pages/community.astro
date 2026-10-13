@@ -1,0 +1,180 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../site.config.ts";
+
+const link = site.forms.communityFormLink;
+
+const isTally = link.includes("tally.so");
+const tallyEmbed = isTally
+  ? link.replace("tally.so/r/", "tally.so/embed/") +
+    (link.includes("?") ? "&" : "?") +
+    "alignLeft=1&transparentBackground=1&dynamicHeight=1"
+  : "";
+
+const description = `Share your story of living or working remotely in ${site.place}. Fill in the form, add a few photos, and we'll turn it into a post.`;
+---
+
+<BaseLayout title="Community" description={description} path="/community">
+  <div class="wrap page">
+    <h1>Share your {site.place} story</h1>
+    <p class="lead">
+      The best guidance here comes from people actually living it. Tell
+      us your story — add a few photos — and we'll shape it into a post
+      that other nomads can find and learn from. You get the credit.
+    </p>
+
+    <div class="how">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <strong>You fill in the form.</strong> Your story, a few
+          details, and up to a handful of photos.
+        </li>
+        <li>
+          <strong>We check it over.</strong> Every submission is read
+          by a human first — so nothing spammy or unpleasant ever goes
+          live. This is the bit that keeps the site good.
+        </li>
+        <li>
+          <strong>It becomes a post.</strong> We tidy it up, add it to
+          the guides, and credit you. We'll email you the link.
+        </li>
+      </ol>
+    </div>
+
+    {link ? (
+      isTally ? (
+        <div class="embed">
+          <iframe
+            data-tally-src={tallyEmbed}
+            src={tallyEmbed}
+            width="100%"
+            height="600"
+            frameborder="0"
+            title="Share your story"
+            loading="lazy"
+          ></iframe>
+        </div>
+      ) : (
+        <p class="cta">
+          <a href={link} class="btn" target="_blank" rel="noopener">
+            Open the story form
+          </a>
+        </p>
+      )
+    ) : (
+      <div class="setup-note">
+        <h2>One quick setup step</h2>
+        <p>
+          The community form isn't connected yet. The easiest option
+          that handles photo uploads for free is
+          <a href="https://tally.so" target="_blank" rel="noopener">Tally</a>:
+        </p>
+        <ol>
+          <li>Make a free Tally account and build a form (name, email, their story, and a file-upload field for photos).</li>
+          <li>Set the form so submissions come to your email — leave it as "manual review", not auto-publish.</li>
+          <li>
+            Copy the form's share link (like <code>https://tally.so/r/abc123</code>)
+            and paste it into <code>communityFormLink</code> in
+            <code>src/site.config.ts</code>, then rebuild. It'll appear
+            right here, inline.
+          </li>
+        </ol>
+        <p>
+          When a story comes in and you're happy with it, you (or
+          Claude Code) turn it into a Markdown file in
+          <code>src/content/posts/</code> — the same as any other guide.
+        </p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    max-width: 46rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 54ch;
+    margin-bottom: 2.5rem;
+  }
+  .how {
+    margin-bottom: 2.5rem;
+  }
+  .how h2 {
+    font-size: 1.35rem;
+  }
+  .steps {
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    max-width: 40rem;
+  }
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.8rem;
+    color: var(--ink-soft);
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--paper-raised);
+    background: var(--brand);
+    border-radius: 50%;
+  }
+  .steps strong {
+    color: var(--ink);
+  }
+  .embed {
+    border: 1px solid var(--mist);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    background: var(--paper-raised);
+  }
+  .embed iframe {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  .cta {
+    margin-top: 1rem;
+  }
+  .setup-note {
+    background: var(--paper-raised);
+    border: 1px solid var(--mist);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.7rem;
+  }
+  .setup-note h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .setup-note ol {
+    padding-left: 1.2rem;
+    color: var(--ink-soft);
+  }
+  .setup-note li {
+    margin-bottom: 0.5rem;
+  }
+  .setup-note code {
+    background: var(--paper);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+</style>

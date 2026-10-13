@@ -1,0 +1,76 @@
+---
+import { site } from "../site.config.ts";
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  pubDate: Date;
+  tags?: string[];
+}
+const { title, description, slug, pubDate, tags = [] } = Astro.props;
+const dateStr = pubDate.toLocaleDateString(site.language, {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const isoDate = pubDate.toISOString();
+---
+
+<article class="post-card">
+  <a href={`/blog/${slug}`} class="post-card-link">
+    <h3>{title}</h3>
+    <p class="post-card-desc">{description}</p>
+    <p class="post-card-meta">
+      <time datetime={isoDate}>{dateStr}</time>
+      {tags.length > 0 && <span class="post-card-tag">{tags[0]}</span>}
+      <span class="post-card-read">Read guide</span>
+    </p>
+  </a>
+</article>
+
+<style>
+  .post-card {
+    border-top: 1px solid var(--mist);
+  }
+  .post-card-link {
+    display: block;
+    padding: 1.7rem 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .post-card h3 {
+    margin: 0 0 0.4rem;
+    color: var(--ink);
+    transition: color 0.15s ease;
+  }
+  .post-card-link:hover h3 {
+    color: var(--brand);
+  }
+  .post-card-desc {
+    margin: 0 0 0.7rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .post-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+  .post-card-tag {
+    padding: 0.1rem 0.6rem;
+    border: 1px solid var(--mist-deep);
+    border-radius: 999px;
+    font-size: 0.82rem;
+  }
+  .post-card-read {
+    margin-left: auto;
+    color: var(--brand);
+    font-weight: 600;
+  }
+  .post-card-link:hover .post-card-read {
+    color: var(--accent);
+  }
+</style>

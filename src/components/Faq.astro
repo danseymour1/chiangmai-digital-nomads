@@ -1,0 +1,67 @@
+---
+/* =============================================================
+   FAQ  —  shows a question/answer list AND builds the
+   "FAQPage" structured data that helps you appear in Google's
+   FAQ results and in AI answer engines (AEO).
+   ============================================================= */
+interface Props {
+  items: { q: string; a: string }[];
+}
+const { items } = Astro.props;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+---
+
+{items.length > 0 && (
+  <section class="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Common questions</h2>
+    <dl>
+      {items.map((item) => (
+        <div class="faq-item">
+          <dt>{item.q}</dt>
+          <dd>{item.a}</dd>
+        </div>
+      ))}
+    </dl>
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(faqSchema)}
+    />
+  </section>
+)}
+
+<style>
+  .faq {
+    margin-top: var(--space-section);
+    max-width: var(--measure);
+  }
+  .faq dl {
+    margin: 0;
+  }
+  .faq-item {
+    border-top: 1px solid var(--mist);
+    padding: 1.2rem 0;
+  }
+  .faq-item:last-child {
+    border-bottom: 1px solid var(--mist);
+  }
+  .faq dt {
+    font-family: var(--font-display);
+    font-weight: 560;
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+  }
+  .faq dd {
+    margin: 0;
+    color: var(--ink-soft);
+  }
+</style>

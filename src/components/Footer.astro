@@ -1,0 +1,106 @@
+---
+import { site } from "../site.config.ts";
+const year = new Date().getFullYear();
+const socials = Object.entries(site.social).filter(([, v]) => v);
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">{site.name}</span>
+      <p>{site.footerNote}</p>
+      {socials.length > 0 && (
+        <ul class="footer-social">
+          {socials.map(([name, href]) => (
+            <li>
+              <a href={href} rel="me noopener" target="_blank">
+                {name.charAt(0).toUpperCase() + name.slice(1)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        {site.nav.map((item) => (
+          <li>
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))}
+        <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap footer-legal">
+    <p>© {year} {site.name}. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-section);
+    border-top: 1px solid var(--mist);
+    background: var(--paper-raised);
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .footer-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .footer-brand p {
+    color: var(--ink-soft);
+    max-width: 42ch;
+    margin-top: 0.5rem;
+  }
+  .footer-social {
+    display: flex;
+    gap: 1.1rem;
+    list-style: none;
+    margin: 0.8rem 0 0;
+    padding: 0;
+  }
+  .footer-social a {
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .footer-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer-nav a:hover {
+    color: var(--brand);
+  }
+  .footer-legal {
+    border-top: 1px solid var(--mist);
+    padding-block: 1.2rem;
+  }
+  .footer-legal p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 640px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+  }
+</style>

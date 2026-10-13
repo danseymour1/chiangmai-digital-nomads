@@ -1,0 +1,65 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { site } from "../../site.config.ts";
+
+const posts = (await getCollection("posts", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const description = `Practical, up-to-date guides to living and working remotely in ${site.place}, Thailand — cost of living, cafés, visas, neighbourhoods and more.`;
+---
+
+<BaseLayout title="Guides" description={description} path="/blog">
+  <div class="wrap page-head">
+    <h1>Guides to {site.place}</h1>
+    <p class="lead">{description}</p>
+  </div>
+
+  <div class="wrap">
+    <div class="post-list">
+      {posts.length === 0 ? (
+        <p class="empty">
+          No guides yet. Add a Markdown file to
+          <code>src/content/posts/</code> and it appears here.
+        </p>
+      ) : (
+        posts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            pubDate={post.data.pubDate}
+            tags={post.data.tags}
+          />
+        ))
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    padding-bottom: 1rem;
+    max-width: 56rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .post-list {
+    border-bottom: 1px solid var(--mist);
+  }
+  .empty {
+    padding: 2rem 0;
+    color: var(--ink-soft);
+  }
+  .empty code {
+    background: var(--paper-raised);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+  }
+</style>

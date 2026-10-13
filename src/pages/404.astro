@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../site.config.ts";
+---
+
+<BaseLayout
+  title="Page not found"
+  description="That page doesn't exist."
+  path="/404"
+>
+  <div class="wrap page">
+    <p class="code">404</p>
+    <h1>That page has wandered off.</h1>
+    <p class="lead">
+      The page you're after doesn't exist — maybe it moved, maybe the
+      link was wrong. Let's get you back on track.
+    </p>
+    <div class="actions">
+      <a href="/" class="btn">Back home</a>
+      <a href="/blog" class="btn btn--ghost">Browse the guides</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding-top: clamp(3rem, 8vw, 6rem);
+    padding-bottom: var(--space-section);
+    max-width: 42rem;
+  }
+  .code {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 10vw, 5rem);
+    color: var(--accent);
+    margin: 0;
+    line-height: 1;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 48ch;
+    margin-bottom: 1.8rem;
+  }
+  .actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+</style>
