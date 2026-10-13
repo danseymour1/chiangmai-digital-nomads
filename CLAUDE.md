@@ -9,19 +9,31 @@ This is an Astro site. Blog posts are Markdown files in src/content/posts/. Push
 ## Writing a new post
 Given a title, create ONE file in src/content/posts/ with frontmatter: title (the full headline), description (~150 chars, the Google snippet), pubDate (today), tags (one or two), image/imageAlt (see Images), keyAnswer (a direct 2–3 sentence TL;DR answer that Google and AI tools quote), faqs (3–5 real questions people Google, each answered in 1–3 sentences). Then write the body with ## headings phrased as the questions people search, answered right underneath.
 
-## Voice and style
-- Formal but friendly: professional, clear and warm — not chatty. No emojis, no diary asides, no self-deprecation. A knowledgeable local writing a proper guide.
+## Voice
+- Third-person, giving clear direct advice. No "we". No em-dashes (use commas, brackets or full stops instead).
+- Formal but friendly: professional, clear and warm, not chatty. No emojis, no diary asides, no self-deprecation. A knowledgeable local writing a proper guide.
 - British English throughout.
 - Grounded and credible, written as if from direct experience of Chiang Mai.
-- Honest and independent — no hype.
+- Honest and independent, no hype.
+
+## Style
 - 800–1,200 words.
 - Lead with the answer, then the detail. Name specific places with a brief reason.
-- Prices: THB as the main figure, with approximate GBP, USD and EUR equivalents in brackets, e.g. "12,000–22,000 THB (≈ £270–£495 · $355–$655 · €315–€580)". Use current rates and state them once per post with the month and year, noting that rates move.
 - Short bullet lists for scannable things (places, pros/cons, quick costs); prose for the rest.
-- Round-up / "best X" posts (areas, cafés, coworking, etc.) use a light numbered listicle: each item an H2 "## 1. Name — short tag", always giving BOTH upsides and downsides plus the key practical labels (e.g. Rent, Coworking nearby, Who it suits), and one specific lived-in detail per item (a named soi, market, landmark or building type). Keep normal prose for narrative/single-topic posts.
-- Link to other relevant posts where it genuinely helps. Links must read naturally inside a sentence, anchored on a natural phrase ("...a short walk from [plenty of coworking spaces](/best-cafes-work-chiang-mai/)") — never bolt-on "see our guide to X" lines. Always use relative links (/slug/), never a full or workers.dev URL.
 - NEVER invent specific facts (prices, visa rules, hours, stats). If unsure, research the current figure or give a clearly-flagged range for me to verify. Never state a guess as fact.
 - Visa/legal details: add a short line telling readers to check official sources.
+
+## Prices
+- Thai baht only, shown with the ฿ symbol, e.g. ฿12,000–22,000. Never write "THB", and do not add other currencies.
+
+## Round-up posts ("best X": areas, cafés, coworking, etc.)
+- Light numbered listicle: each item an H2 like "## 1. Nimman — best for first stays".
+- For each item always give Rent, Coworking nearby, Who it suits, and BOTH Upsides and Downsides.
+- Add one specific, real, lived-in detail per item so sections do not feel interchangeable.
+- Keep normal prose for narrative / single-topic posts.
+
+## Internal links
+- Link to other relevant posts where it genuinely helps. Anchor the link on a natural phrase inside a sentence, with no added commentary. Use relative links (/slug/), never a full or workers.dev URL.
 
 ## Images
 - Images live in public/images/. Use one or two suitable ones per post: a cover (image + a descriptive imageAlt), optionally one inline.
