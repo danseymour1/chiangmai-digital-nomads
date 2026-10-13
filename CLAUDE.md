@@ -15,9 +15,11 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - Grounded and credible, written as if from direct experience of Chiang Mai.
 - Honest and independent — no hype.
 - 800–1,200 words.
-- Lead with the answer, then the detail. Costs in Thai baht with an approx £/$ conversion in brackets. Name specific places with a brief reason.
+- Lead with the answer, then the detail. Name specific places with a brief reason.
+- Prices: THB as the main figure, with approximate GBP, USD and EUR equivalents in brackets, e.g. "12,000–22,000 THB (≈ £270–£495 · $355–$655 · €315–€580)". Use current rates and state them once per post with the month and year, noting that rates move.
 - Short bullet lists for scannable things (places, pros/cons, quick costs); prose for the rest.
-- Link to other relevant posts where it genuinely helps.
+- Round-up / "best X" posts (areas, cafés, coworking, etc.) use a light numbered listicle: each item an H2 "## 1. Name — short tag", always giving BOTH upsides and downsides plus the key practical labels (e.g. Rent, Coworking nearby, Who it suits), and one specific lived-in detail per item (a named soi, market, landmark or building type). Keep normal prose for narrative/single-topic posts.
+- Link to other relevant posts where it genuinely helps. Links must read naturally inside a sentence, anchored on a natural phrase ("...a short walk from [plenty of coworking spaces](/best-cafes-work-chiang-mai/)") — never bolt-on "see our guide to X" lines. Always use relative links (/slug/), never a full or workers.dev URL.
 - NEVER invent specific facts (prices, visa rules, hours, stats). If unsure, research the current figure or give a clearly-flagged range for me to verify. Never state a guess as fact.
 - Visa/legal details: add a short line telling readers to check official sources.
 
