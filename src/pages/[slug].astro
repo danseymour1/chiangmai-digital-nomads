@@ -1,8 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Faq from "../../components/Faq.astro";
-import { site } from "../../site.config.ts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Faq from "../components/Faq.astro";
+import { site } from "../site.config.ts";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -32,7 +32,7 @@ const articleSchema = {
   inLanguage: site.language,
   author: { "@type": "Organization", name: site.name },
   publisher: { "@type": "Organization", name: site.name },
-  mainEntityOfPage: new URL(`/blog/${post.id}`, site.url).href,
+  mainEntityOfPage: new URL(`/${post.id}/`, site.url).href,
   ...(d.image && { image: new URL(d.image, site.url).href }),
 };
 
@@ -45,13 +45,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 2,
       name: "Guides",
-      item: new URL("/blog", site.url).href,
+      item: new URL("/blog/", site.url).href,
     },
     {
       "@type": "ListItem",
       position: 3,
       name: d.title,
-      item: new URL(`/blog/${post.id}`, site.url).href,
+      item: new URL(`/${post.id}/`, site.url).href,
     },
   ],
 };
@@ -60,7 +60,7 @@ const breadcrumbSchema = {
 <BaseLayout
   title={d.title}
   description={d.description}
-  path={`/blog/${post.id}`}
+  path={`/${post.id}/`}
   image={d.image}
   type="article"
   publishedDate={d.pubDate}
@@ -71,7 +71,7 @@ const breadcrumbSchema = {
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">/</span>
-      <a href="/blog">Guides</a>
+      <a href="/blog/">Guides</a>
     </nav>
 
     <header class="post-header">
@@ -115,7 +115,7 @@ const breadcrumbSchema = {
     <Faq items={d.faqs} />
 
     <footer class="post-foot">
-      <a href="/blog" class="btn btn--ghost">← More guides</a>
+      <a href="/blog/" class="btn btn--ghost">← More guides</a>
     </footer>
   </article>
 </BaseLayout>

@@ -6,4 +6,5 @@ export default defineConfig({
   site: site.url,
   integrations: [sitemap()],
   output: "static",
+  trailingSlash: "always",
 });

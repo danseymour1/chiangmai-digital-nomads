@@ -45,4 +45,4 @@ Even with good café wifi, keep a **mobile data SIM** topped up. If a café's co
 
 ## Prefer a desk?
 
-If cafés aren't your style, Chiang Mai has one of the best selections of coworking spaces anywhere, with monthly memberships to suit every budget. Many nomads do both — a coworking base for focused days, cafés for a change of scene. For the full budget picture, see our guide to the [cost of living in Chiang Mai](/blog/cost-of-living-chiang-mai-digital-nomads).
+If cafés aren't your style, Chiang Mai has one of the best selections of coworking spaces anywhere, with monthly memberships to suit every budget. Many nomads do both — a coworking base for focused days, cafés for a change of scene. For the full budget picture, see our guide to the [cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/).
