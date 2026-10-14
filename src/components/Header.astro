@@ -1,5 +1,6 @@
 ---
 import { site } from "../site.config.ts";
+import { logo } from "../logo.ts";
 const current = Astro.url.pathname;
 const isActive = (href: string) =>
   href === "/" ? current === "/" : current.startsWith(href);
@@ -8,7 +9,9 @@ const isActive = (href: string) =>
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="/" class="logo" aria-label={`${site.name} home`}>
-      <span class="logo-mark" aria-hidden="true"></span>
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        {logo.map((p) => <path class={p.tone} d={p.d} />)}
+      </svg>
       <span class="logo-text">{site.name}</span>
     </a>
 
@@ -62,16 +65,18 @@ const isActive = (href: string) =>
     color: var(--ink);
   }
   .logo-mark {
-    width: 1.35rem;
-    height: 1.35rem;
+    width: 1.75rem;
+    height: 1.75rem;
     flex: none;
-    border-radius: 50% 50% 50% 2px;
-    background: radial-gradient(
-      circle at 35% 30%,
-      var(--accent),
-      var(--brand) 75%
-    );
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+  .logo-mark .brand {
+    fill: var(--brand);
+  }
+  .logo-mark .accent {
+    fill: var(--accent);
+  }
+  .logo-mark .paper {
+    fill: var(--paper);
   }
   .logo-text {
     font-family: var(--font-display);
