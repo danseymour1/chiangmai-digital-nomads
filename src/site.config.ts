@@ -37,8 +37,8 @@ export const site = {
   /* ---- Colours (the theme) -------------------------------- */
   // Change these two to give each site its own feel.
   theme: {
-    brand: "#1a1413",   // warm near-black ink (buttons, links)
-    accent: "#de5d50",  // warm coral, used sparingly (marks, focus)
+    brand: "#23423d",   // deep highland teal-green
+    accent: "#dd8a2e",  // warm lantern amber
   },
 
   /* ---- Navigation ----------------------------------------- */

@@ -38,50 +38,47 @@ const isActive = (href: string) =>
 </header>
 
 <style>
-  /* Coral: a content-sized floating pill, detached from the edges. */
   .site-header {
+    border-bottom: 1px solid var(--mist);
+    background: color-mix(in srgb, var(--paper) 82%, white);
     position: sticky;
     top: 0;
     z-index: 50;
-    padding: 0.8rem clamp(0.6rem, 2vw, 1.2rem) 0;
+    backdrop-filter: saturate(1.1) blur(6px);
   }
   .header-inner {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    width: fit-content;
-    max-width: 100%;
-    padding: 0.4rem 0.4rem 0.4rem 1.1rem;
-    background: color-mix(in srgb, var(--paper-raised) 85%, transparent);
-    border: 1px solid var(--mist);
-    border-radius: var(--radius-pill);
-    box-shadow: var(--shadow-lift);
-    backdrop-filter: blur(12px);
+    gap: 1rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
   }
   .logo {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
+    gap: 0.6rem;
     text-decoration: none;
     color: var(--ink);
   }
   .logo-mark {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.35rem;
+    height: 1.35rem;
     flex: none;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: inset -3px -3px 0 color-mix(in srgb, var(--ink) 18%, transparent);
+    border-radius: 50% 50% 50% 2px;
+    background: radial-gradient(
+      circle at 35% 30%,
+      var(--accent),
+      var(--brand) 75%
+    );
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
   }
   .logo-text {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 0.98rem;
-    letter-spacing: -0.02em;
+    font-size: 1.18rem;
+    letter-spacing: -0.01em;
     line-height: 1;
-    white-space: nowrap;
   }
   nav {
     display: flex;
@@ -89,53 +86,38 @@ const isActive = (href: string) =>
   }
   .nav-links {
     display: flex;
-    gap: 0.1rem;
+    gap: 1.4rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .nav-links a {
-    position: relative;
-    display: block;
     color: var(--ink-soft);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.92rem;
-    padding: 0.5rem 0.9rem;
-    border-radius: var(--radius-pill);
-    transition: background 0.15s ease, color 0.15s ease;
+    font-size: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
   }
   .nav-links a:hover {
-    color: var(--ink);
-    background: var(--paper-2);
+    color: var(--brand);
   }
   .nav-links a[aria-current="page"] {
-    color: var(--ink);
-  }
-  .nav-links a[aria-current="page"]::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0.18rem;
-    width: 4px;
-    height: 4px;
-    margin-left: -2px;
-    border-radius: 50%;
-    background: var(--accent);
+    color: var(--brand);
+    border-bottom-color: var(--accent);
   }
   .nav-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.65rem;
-    border-radius: var(--radius-pill);
+    padding: 0.4rem;
   }
   .nav-bars,
   .nav-bars::before,
   .nav-bars::after {
     display: block;
-    width: 20px;
+    width: 22px;
     height: 2px;
     background: var(--ink);
     position: relative;
@@ -147,48 +129,41 @@ const isActive = (href: string) =>
     position: absolute;
   }
   .nav-bars::before {
-    top: -6px;
+    top: -7px;
   }
   .nav-bars::after {
-    top: 6px;
+    top: 7px;
   }
 
   @media (max-width: 640px) {
-    .header-inner {
-      width: 100%;
-    }
     .nav-toggle {
       display: block;
     }
     .nav-links {
       position: absolute;
-      top: calc(100% + 0.5rem);
+      top: 100%;
       right: 0;
       left: 0;
       flex-direction: column;
-      gap: 0.1rem;
+      gap: 0;
       background: var(--paper-raised);
-      border: 1px solid var(--mist);
-      border-radius: calc(var(--radius) + 6px);
-      box-shadow: var(--shadow-lift);
-      padding: 0.4rem;
+      border-bottom: 1px solid var(--mist);
+      padding: 0.5rem 0;
       display: none;
     }
     .nav-links.open {
       display: flex;
     }
+    .nav-links li {
+      padding: 0 clamp(1.1rem, 4vw, 2.5rem);
+    }
     .nav-links a {
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius);
+      display: block;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--mist);
     }
-    .nav-links a[aria-current="page"] {
-      background: var(--paper-2);
-    }
-    .nav-links a[aria-current="page"]::after {
-      left: auto;
-      right: 1rem;
-      bottom: 50%;
-      margin: 0 0 -2px;
+    .nav-links li:last-child a {
+      border-bottom: none;
     }
   }
 </style>
