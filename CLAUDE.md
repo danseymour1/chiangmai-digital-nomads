@@ -33,9 +33,19 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - Add one specific, real, lived-in detail per item so sections do not feel interchangeable.
 - Keep normal prose for narrative / single-topic posts.
 
+## Trusted sources
+- When researching facts for a Chiang Mai post, FIRST consult the relevant ones of my own first-hand articles below, THEN the community stories in src/content/community/, THEN supplement with web research.
+- Treat my own articles and the community stories as the priority source for local detail. If web research contradicts them, flag the conflict for me rather than overriding silently.
+- Use them for facts and local knowledge only, not for writing style (the site stays third person per the Voice rules).
+- My Chiang Mai articles:
+  - https://danroundtheworld.com/why-i-moved-to-chiang-mai-as-a-digital-nomad/
+  - https://danroundtheworld.com/digital-nomad-guide-to-chiang-mai/
+  - https://danroundtheworld.com/best-coworking-spaces-in-chiang-mai/
+  - https://danroundtheworld.com/how-much-does-it-cost-being-a-digital-nomad-in-chiang-mai/
+  - https://danroundtheworld.com/malaysia-vs-thailand-for-digital-nomads/
+
 ## Recommending specific places
-- When recommending specific places (cafés, coworking, restaurants, etc.) in any post, FIRST check the community stories in src/content/community/ for relevant real mentions and prioritise those, crediting the contributor where it fits.
-- THEN supplement with web research for anything missing.
+- When recommending specific places (cafés, coworking, restaurants, etc.) in any post, follow the Trusted sources order: my articles first, then real mentions in the community stories (crediting the contributor where it fits), then web research for anything missing.
 - Never invent places. Flag anything uncertain (possibly closed, moved, or unverified details) for me to verify.
 
 ## Internal links
