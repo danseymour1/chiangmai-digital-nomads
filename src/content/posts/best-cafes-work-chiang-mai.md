@@ -28,7 +28,7 @@ Before the picks, the checklist that matters in Chiang Mai:
 
 ## Where the work cafés cluster
 
-The densest cluster by far is **Nimmanhaemin ("Nimman")**, with dozens of cafés and coworking spaces within walking distance, which is exactly why so many nomads base themselves nearby. The **Old City** and **Santitham** have their own quieter, often cheaper options.
+The densest cluster by far is **Nimmanhaemin ("Nimman")**, with dozens of cafés and coworking spaces within walking distance, which is exactly why so many nomads [base themselves nearby](/best-areas-to-live-in-chiang-mai/). The **Old City** and **Santitham** have their own quieter, often cheaper options.
 
 ## Which cafés in Nimman are best for working?
 
@@ -67,7 +67,7 @@ Thai café culture is relaxed, but a few habits keep you welcome:
 
 ## Always carry a backup
 
-Even with good café wifi, keep a **mobile data SIM** topped up. If a café's connection wobbles mid-meeting, you can hotspot from your phone and carry on. It's the cheapest bit of insurance for remote work here.
+Even with good café wifi, keep a **[mobile data SIM](/settling-in-chiang-mai/)** topped up. If a café's connection wobbles mid-meeting, you can hotspot from your phone and carry on. It's the cheapest bit of insurance for remote work here.
 
 ## Prefer a desk?
 

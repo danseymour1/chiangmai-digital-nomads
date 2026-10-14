@@ -3,6 +3,8 @@ title: "What to See and Do in Chiang Mai"
 description: "The best things to see and do in Chiang Mai: Old City temples, Doi Suthep, weekend walking streets, markets, cooking classes, Muay Thai and festivals."
 pubDate: 2026-10-14
 tags: ["things to do"]
+image: "/images/wat-chedi-luang-lanterns.jpg"
+imageAlt: "Colourful paper lanterns hanging beside the ruined brick chedi at Wat Chedi Luang in Chiang Mai"
 keyAnswer: "Start with the Old City temples, especially Wat Chedi Luang and Wat Phra Singh, then ride up to Wat Phra That Doi Suthep for the view over the city. Save weekends for the Sunday Walking Street and the Saturday Wua Lai market, and fill weekday evenings with a cooking class or a Muay Thai session. Most temple fees are ฿20–50, and the markets are free to wander."
 faqs:
   - q: "What day is the Chiang Mai Sunday night market?"
@@ -17,7 +19,7 @@ faqs:
     a: "Expect roughly ฿1,000–1,500 for a half-day class and ฿1,500–2,500 for a full day, usually including a market visit, all ingredients and the meal itself. Booking directly with the school is often cheaper than going through an agent."
 ---
 
-Chiang Mai's best sights sit inside or just outside the moat, so most fit around a working week. Here are eight worth doing, with typical costs; fees change, so treat prices as a guide.
+Chiang Mai's best sights sit inside or just outside the moat, so most fit around a working week, leaving the [day trips](/day-trips-from-chiang-mai/) further out for weekends. Here are eight worth doing, with typical costs; fees change, so treat prices as a guide.
 
 ## 1. Wat Chedi Luang and the Old City temples — best for a first afternoon
 

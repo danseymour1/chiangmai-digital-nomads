@@ -3,6 +3,8 @@ title: "Day Trips from Chiang Mai"
 description: "The best day trips from Chiang Mai for remote workers: Doi Suthep, Doi Inthanon, the Sticky Waterfall, Mae Kampong, Lamphun and more, with costs and travel times."
 pubDate: 2026-10-14
 tags: ["things to do"]
+image: "/images/kew-fin-viewpoint-mae-kampong.jpg"
+imageAlt: "The Kew Fin viewpoint sign near Mae Kampong, looking out over forested hills"
 keyAnswer: "The best day trips from Chiang Mai are Doi Suthep and Doi Pui for a half day close to town, Doi Inthanon for Thailand's highest mountain, and the Bua Thong Sticky Waterfall for a free, hands-on adventure. Most sit within one to two hours of the city, and the Chiang Rai White Temple is possible but makes a long day. November to February brings the clearest views, while smoke from the burning season spoils mountain trips in March and April."
 faqs:
   - q: "Can you do a day trip from Chiang Mai to the White Temple in Chiang Rai?"
@@ -85,7 +87,7 @@ Choose only places that ban riding, performances and chains, keep groups small a
 
 Lamphun, once capital of the Hariphunchai kingdom that predates Chiang Mai, makes a quiet half-day trip south of the city.
 
-- **Getting there:** about 30 km, around 40 minutes; blue songthaews leave from near Warorot Market, and the slow train costs under ฿20.
+- **Getting there:** about 30 km, around 40 minutes; blue songthaews leave from near [Warorot Market](/what-to-see-and-do-in-chiang-mai/), and the slow train costs under ฿20.
 - **Cost:** Wat Phra That Hariphunchai entry is typically ฿20–50 for foreigners; the Hariphunchai National Museum opposite charges separately.
 - **Who it suits:** temple and history enthusiasts, and those without their own transport.
 - **Upsides:** cheap, uncrowded and easy by public transport.
@@ -119,4 +121,4 @@ It opens roughly 8am to 5.30pm, and many visitors book a day tour that adds the 
 
 ## Planning your trips
 
-Weekdays and early starts make every trip easier. Renting a scooter or sharing a driver keeps costs low and fits easily within [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/). National park fees change from time to time, so confirm current prices before setting off.
+Weekdays and early starts make every trip easier. [Renting a scooter](/settling-in-chiang-mai/) or sharing a driver keeps costs low and fits easily within [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/). National park fees change from time to time, so confirm current prices before setting off.

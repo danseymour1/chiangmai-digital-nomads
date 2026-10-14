@@ -33,7 +33,7 @@ For most digital nomads, a comfortable month lands between **฿35,000 and ฿55
 
 ## Rent: area makes the difference
 
-Rent is your biggest lever, and in Chiang Mai it is really about *where*. Trendy **Nimmanhaemin**, with its cafés, coworking and nightlife, carries a premium. Move a few minutes out, to areas like Santitham or towards the university, and the same condo costs noticeably less. Book somewhere cheap for your first week, then find a monthly place in person.
+Rent is your biggest lever, and in Chiang Mai it is really about *where*. Trendy **Nimmanhaemin**, with its cafés, coworking and nightlife, carries a premium. Move a few minutes out, to [areas like Santitham](/best-areas-to-live-in-chiang-mai/) or towards the university, and the same condo costs noticeably less. Book somewhere cheap for your first week, then find a monthly place in person.
 
 ## Food: among the best value anywhere
 
@@ -41,12 +41,12 @@ A plate of excellent Thai food from a local spot is ฿40–70. Chiang Mai also 
 
 ## Working: coworking and cafés
 
-Chiang Mai has one of the densest coworking and café scenes in Asia, with memberships around **฿3,000–5,000 a month**. Wifi is fast and widely available, which is a big part of why nomads flock here.
+Chiang Mai has one of the densest [coworking](/best-coworking-spaces-in-chiang-mai/) and [café](/best-cafes-work-chiang-mai/) scenes in Asia, with memberships around **฿3,000–5,000 a month**. Wifi is fast and widely available, which is a big part of why nomads flock here.
 
 ## Getting around
 
-Most people rent a scooter, at around **฿2,500–3,500 a month** including petrol. Ride-hailing apps and songthaews (shared red trucks) cover you if you would rather not ride.
+Most people [rent a scooter](/settling-in-chiang-mai/), at around **฿2,500–3,500 a month** including petrol. Ride-hailing apps and songthaews (shared red trucks) cover you if you would rather not ride.
 
 ## The honest catch
 
-Chiang Mai's popularity is its one downside: the nomad-friendly areas can feel busy and a little bubble-like, and the annual "burning season" air pollution (roughly March–April) is a real factor many people plan around. For most, the value, community and setup more than make up for it.
+Chiang Mai's popularity is its one downside: the nomad-friendly areas can feel busy and a little bubble-like, and the annual ["burning season" air pollution](/best-time-to-visit-chiang-mai/) (roughly March–April) is a real factor many people plan around. For most, the value, community and setup more than make up for it.

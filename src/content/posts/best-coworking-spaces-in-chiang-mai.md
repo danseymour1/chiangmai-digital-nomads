@@ -3,6 +3,8 @@ title: "The Best Coworking Spaces in Chiang Mai"
 description: "Chiang Mai's best coworking spaces compared: Yellow, Punspace, Alt_ChiangMai, Hub53 and more, with day pass and monthly prices and who each one suits."
 pubDate: 2026-10-14
 tags: ["working"]
+image: "/images/punspace-coworking.jpg"
+imageAlt: "Punspace coworking space in Chiang Mai, a dark green building shaded by large trees, with outdoor tables in front"
 keyAnswer: "Yellow in Nimman is the best coworking space in Chiang Mai for focused, full-time work, with large desks, call booths and 24-hour access for members. Punspace and Alt_ChiangMai in the Old City suit those who want a more social space, and Hub53 is the best budget pick. Day passes run from about ฿180 to ฿429, and monthly hot desks from about ฿2,500 to ฿6,000."
 faqs:
   - q: "How much does a coworking space cost in Chiang Mai?"
@@ -55,7 +57,7 @@ The attached coffee shop is good enough to be a reason to work here in its own r
 
 ## 4. Hub53 — best budget base
 
-Hub53 combines coworking with coliving apartments on Chonprathan Road, on the canal side of the Nimman and university area.
+Hub53 combines coworking with [coliving apartments](/best-coliving-spaces-in-chiang-mai/) on Chonprathan Road, on the canal side of the Nimman and university area.
 
 - **Price:** ฿195 for a day pass; ฿1,999 a month for daytime access or ฿3,399 for 24 hours.
 - **Area:** Suthep, a short ride from Nimman and close to Chiang Mai University.

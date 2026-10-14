@@ -3,6 +3,8 @@ title: "What Visa Options Are There for Digital Nomads in Chiang Mai?"
 description: "The realistic visa routes for remote workers in Chiang Mai in 2026: the new 30-day exemption, the DTV, tourist visas, LTR, Thailand Privilege and ED visas."
 pubDate: 2026-10-14
 tags: ["visas", "planning"]
+image: "/images/chang-phueak-gate-north-gate.jpg"
+imageAlt: "Chang Phueak Gate, the north gate of Chiang Mai's Old City, lit up at dusk with elephant decorations"
 keyAnswer: "Most digital nomads planning more than a few weeks in Chiang Mai use the Destination Thailand Visa (DTV), which is valid for five years and allows stays of up to 180 days per entry, extendable once by a further 180 days. Short visits can be made on visa exemption, which for UK, US and most EU passports was cut from 60 to 30 days on 15 September 2026. None of these visas allows work for Thai clients or companies."
 faqs:
   - q: "How long can UK and US citizens stay in Thailand without a visa?"
@@ -79,7 +81,7 @@ The Non-Immigrant ED visa covers study at a recognised Thai institution, and in 
 Extensions of stay are handled by Chiang Mai Immigration. In recent years, extensions have been processed at the office inside **Promenada Resort Mall** on the east side of the city, while the office's official website lists an address on Airport Road. Confirm which office handles your service before going, arrive early, and bring passport photos, passport copies and the ฿1,900 fee in cash.
 
 - **90-day reporting (TM47):** required after 90 consecutive days in Thailand. It is free and can be filed online, by post or in person.
-- **TM30:** your landlord or hotel must notify immigration of your address, normally within 24 hours of arrival. Many condo owners in areas such as [Nimman and Santitham](/best-areas-to-live-in-chiang-mai/) handle this, but tenants should ask for a copy, as immigration often requests it at extension time.
+- **TM30:** your landlord or hotel must [notify immigration of your address](/settling-in-chiang-mai/), normally within 24 hours of arrival. Many condo owners in areas such as [Nimman and Santitham](/best-areas-to-live-in-chiang-mai/) handle this, but tenants should ask for a copy, as immigration often requests it at extension time.
 
 ## Does staying 180 days make you a Thai tax resident?
 

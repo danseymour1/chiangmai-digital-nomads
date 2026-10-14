@@ -43,7 +43,7 @@ It should not be played down. In early April 2026, Chiang Mai recorded AQI readi
 The practical advice:
 
 - **If you have asthma, a heart or lung condition, or are travelling with children,** plan to be elsewhere from late February to April.
-- **If you stay,** choose a condo with sealed windows and a proper air purifier, keep N95 masks to hand, and favour coworking spaces with filtered air over open-sided cafés.
+- **If you stay,** choose a condo with sealed windows and a proper air purifier, keep N95 masks to hand, and favour [coworking spaces](/best-coworking-spaces-in-chiang-mai/) with filtered air over open-sided cafés.
 - **Check live data,** using IQAir or the Thai government's Air4Thai app, rather than relying on how the sky looks.
 
 Many long-term residents simply treat March and April as their travel months, heading to the south of Thailand or abroad.
@@ -54,13 +54,13 @@ Once the smoke clears in late April or May, the heat remains. April is the hotte
 
 ## Is the rainy season a good time for digital nomads?
 
-For many remote workers it is underrated. Rain typically arrives in heavy afternoon or evening bursts rather than all-day drizzle, so mornings are often workable and bright. The hills around Doi Suthep turn green, the air is clean, and the city is noticeably calmer.
+For many remote workers it is underrated. Rain typically arrives in heavy afternoon or evening bursts rather than all-day drizzle, so mornings are often workable and bright. The hills around [Doi Suthep](/day-trips-from-chiang-mai/) turn green, the air is clean, and the city is noticeably calmer.
 
 The downsides are real, though. Scooter riding in a downpour is unpleasant, some roads flood briefly after storms, and in 2024 the Ping River burst its banks and flooded parts of the city, including areas near the river. If you plan a long stay from August to October, check flood history before choosing a building near the water. Choosing [the right area to live in](/best-areas-to-live-in-chiang-mai/) matters more in these months.
 
 ## How do crowds and costs change through the year?
 
-Demand follows the weather. December to February is peak season, with the highest short-stay prices and the most competition for well-located condos in Nimman. The Yi Peng and Loy Krathong lantern festivals, expected on 24 to 25 November in 2026, bring a sharp spike in visitors and hotel rates around those dates.
+Demand follows the weather. December to February is peak season, with the highest short-stay prices and the most competition for well-located condos in Nimman. The [Yi Peng and Loy Krathong lantern festivals](/what-to-see-and-do-in-chiang-mai/), expected on 24 to 25 November in 2026, bring a sharp spike in visitors and hotel rates around those dates.
 
 The rainy season is the quietest period, and landlords and hotels are more open to negotiation. Whatever the month, lease length is the bigger lever: month-to-month rates are always the highest, and landlords commonly take 10 to 15% off for a 12-month commitment. For a full breakdown of rent, food and coworking, see [what a month in Chiang Mai really costs](/cost-of-living-chiang-mai-digital-nomads/).
 

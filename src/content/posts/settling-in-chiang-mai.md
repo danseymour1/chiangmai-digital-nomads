@@ -3,6 +3,8 @@ title: "First-Timer Guide: What You Need to Settle in Chiang Mai When You First 
 description: "A practical first-week checklist for Chiang Mai: airport transfers, SIM cards, cash and ATMs, finding a rental, getting around, TM30, health and etiquette."
 pubDate: 2026-10-14
 tags: ["planning"]
+image: "/images/chiang-mai-airport-thai-airways.jpg"
+imageAlt: "A Thai Airways plane at the gate at Chiang Mai International Airport, with forested mountains behind"
 keyAnswer: "In your first week in Chiang Mai, take a Grab or airport taxi into town, buy a Thai SIM with your passport, and withdraw cash in larger amounts to limit ATM fees. Book a hotel or short-stay apartment for the first week or two, then view monthly rentals in person. Make sure your landlord files your TM30 address registration, and arrange travel or health insurance before you arrive."
 faqs:
   - q: "How do you get from Chiang Mai airport to the Old City?"
@@ -43,7 +45,7 @@ Cards are accepted in malls, supermarkets, hotels and most cafés in Nimman. Tha
 
 ## Where should you stay first, and how do you find a monthly rental?
 
-Book a hotel, serviced apartment or Airbnb for the first one or two weeks rather than signing a lease from abroad. That gives you time to visit buildings, compare areas and test the internet speed.
+Book a hotel, serviced apartment, [coliving room](/best-coliving-spaces-in-chiang-mai/) or Airbnb for the first one or two weeks rather than signing a lease from abroad. That gives you time to visit buildings, compare areas and test the internet speed.
 
 Monthly rentals are best found in person: walk into condo buildings and ask at reception, use local Facebook rental groups and listing sites, or use an agent. Never send money before viewing a property, and ask for a written contract. Expect a deposit of one to two months' rent plus the first month in advance, and ask for the electricity rate per unit before signing. For a breakdown of neighbourhoods and typical rents, compare [the best areas to live in Chiang Mai](/best-areas-to-live-in-chiang-mai/) before you start viewing.
 
@@ -75,4 +77,4 @@ From roughly late February to April, smoke from agricultural and forest fires ca
 - **Body language** — avoid touching anyone's head or pointing your feet at people or Buddha images.
 - **Tone** — stay calm and polite in disagreements; raised voices rarely help.
 
-Once these basics are sorted, the rest falls into place quickly. Budgeting is easier with a realistic picture of [what a month in Chiang Mai really costs](/cost-of-living-chiang-mai-digital-nomads/), and the city's [work-friendly cafés](/best-cafes-work-chiang-mai/) are an easy way to find your routine. Visa rules change often, so confirm current entry and extension requirements on official Thai government sources before you travel.
+Once these basics are sorted, the rest falls into place quickly. Budgeting is easier with a realistic picture of [what a month in Chiang Mai really costs](/cost-of-living-chiang-mai-digital-nomads/), and the city's [work-friendly cafés](/best-cafes-work-chiang-mai/) are an easy way to find your routine. Visa rules change often, so confirm current [entry and extension requirements](/digital-nomad-visas-chiang-mai/) on official Thai government sources before you travel.

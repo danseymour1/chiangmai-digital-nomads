@@ -43,12 +43,12 @@ Many apartment blocks here advertise vacancies with a sign reading "ห้อง
 
 ## 3. Old City — best for character
 
-The Old City is the square inside the moat, packed with temples, guesthouses and cafés. Every Sunday evening, Ratchadamnoen Road becomes the Walking Street market, running from Tha Phae Gate to Wat Phra Singh.
+The Old City is the square inside the moat, packed with [temples](/what-to-see-and-do-in-chiang-mai/), guesthouses and cafés. Every Sunday evening, Ratchadamnoen Road becomes the Walking Street market, running from Tha Phae Gate to Wat Phra Singh.
 
 - **Rent:** ฿8,000–20,000, with basic studios available for less.
 - **Coworking nearby:** Alt_ChiangMai (behind Wat Phra Singh), Punspace at Wiang Kaew and at Tha Phae Gate, and UnionSPACE.
 - **Who it suits:** those who prioritise atmosphere and walking over modern facilities.
-- **Upsides:** walkable, historic, and well served by coworking.
+- **Upsides:** walkable, historic, and well served by [coworking](/best-coworking-spaces-in-chiang-mai/).
 - **Downsides:** height limits mean mostly low-rise apartments and shophouses with few pools or gyms; older buildings can suffer from damp and weak water pressure; tourist crowds in high season.
 
 ## 4. Suthep and the university area — best for quiet
@@ -90,4 +90,4 @@ The suburbs offer gated housing estates (moo baan) with gardens and pools. Hang 
 - **River views and a central address:** the riverside.
 - **A house and garden:** the suburbs.
 
-Book somewhere flexible for your first week or two, then view places in person before committing to a lease. Most foreigners rent while on a tourist or long-stay visa, but visa rules change, so check official Thai immigration and embassy sources for your situation.
+Book somewhere flexible for your [first week or two](/settling-in-chiang-mai/), then view places in person before committing to a lease. Most foreigners rent while on a tourist or long-stay visa, but [visa rules](/digital-nomad-visas-chiang-mai/) change, so check official Thai immigration and embassy sources for your situation.
