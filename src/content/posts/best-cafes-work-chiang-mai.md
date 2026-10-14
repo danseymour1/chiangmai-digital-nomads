@@ -44,12 +44,13 @@ Nimman has the most choice, but many of its famous coffee shops are small and bu
 
 ## Where can you work from a café in the Old City?
 
-The Old City is quieter and slower-paced than Nimman, and wifi tends to be slower too. These spots, inside the moat or just outside Tha Phae Gate, are the most workable:
+The Old City is quieter and slower-paced than Nimman, and wifi tends to be slower too. These spots, inside the moat or just east of it towards Tha Phae Gate and Warorot Market, are the most workable:
 
 - **Carrot Coffee CNX** (Ratchamanka Road, Soi 7): a two-storey café on a quiet lane, with couches downstairs, work tables upstairs and sockets along the walls. It closes early, so plan for a morning session.
 - **W8 Coffee** (Chang Moi Road): large tables, good natural light, a calm atmosphere and fast wifi. Sockets are scattered and there is no food menu.
 - **Brewginning Coffee** (Chang Moi Road, a short walk from Tha Phae Gate): the air-conditioned back room is usually quiet, with sockets at most tables. The front area is busier with people taking photos.
 - **Akha Ama Phrasingh** (Rachadamnoen Road): good coffee and an upstairs room that suits laptops, but sockets are scarce, so arrive with a full battery and treat it as a shorter stop.
+- **ROOT & ROAST Coffee Roaster** (Wichayanon Road, by Warorot Market): a coffee roaster's café, formerly Maktub, recommended by people who live in the city.
 
 ## Which Santitham cafés suit remote workers?
 

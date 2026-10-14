@@ -6,10 +6,10 @@ updatedDate: 2026-10-14
 tags: ["cost of living"]
 image: "/images/khao-soi.jpg"
 imageAlt: "A bowl of khao soi, Chiang Mai's curry noodle soup, with crispy noodles, pickles, shallots and lime on the side"
-keyAnswer: "A very comfortable digital-nomad lifestyle in Chiang Mai costs roughly ฿50,000–65,000 a month, and a careful budget can come in under ฿35,000. A good one-bedroom condo is ฿10,000–20,000 plus ฿1,000–2,500 in bills, street food costs ฿40–60 a dish, and coworking runs ฿3,000–6,000 a month."
+keyAnswer: "A comfortable digital-nomad lifestyle in Chiang Mai costs roughly ฿35,000–60,000 a month, and a careful budget can come in under ฿25,000. A good one-bedroom condo is ฿10,000–20,000 plus ฿1,000–2,500 in bills, street food costs ฿40–60 a dish, and coworking runs ฿3,000–6,000 a month."
 faqs:
   - q: "How much do you need to live in Chiang Mai per month?"
-    a: "A very comfortable lifestyle typically costs around ฿50,000–65,000 a month, covering a nice apartment, a scooter and regular meals out. A careful budget with a cheaper apartment outside the centre and mostly street food can come in under ฿35,000."
+    a: "A comfortable lifestyle typically costs around ฿35,000–60,000 a month, covering a nice apartment, a scooter, coworking and regular meals out. A careful budget with a cheaper apartment outside the centre and mostly street food can come in under ฿25,000."
   - q: "How much is rent in Chiang Mai?"
     a: "A good one-bedroom condo costs ฿10,000–20,000 a month, with the lower end usually on six- to twelve-month leases. Studios out of town start at around ฿8,000, and bills add ฿1,000–2,500."
   - q: "How much does food cost in Chiang Mai?"
@@ -20,7 +20,7 @@ faqs:
     a: "Day passes start at about ฿200, and monthly memberships cost ฿3,000–6,000, with plenty of packages in between."
 ---
 
-Chiang Mai can be as cheap or as expensive as a remote worker wants it to be. A careful budget can come in under ฿35,000 a month, while ฿50,000–65,000 buys a very comfortable life with a nice apartment, a decent scooter and regular meals out. Here is what each part of a month costs in 2026.
+Chiang Mai can be as cheap or as expensive as a remote worker wants it to be. A careful budget can come in under ฿25,000 a month, while ฿35,000–60,000 buys a comfortable life with a nice apartment, a decent scooter, a coworking desk and regular meals out. Here is what each part of a month costs in 2026.
 
 ## How much does it cost to live in Chiang Mai each month?
 
