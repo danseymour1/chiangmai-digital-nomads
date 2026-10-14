@@ -29,22 +29,12 @@ const isoDate = pubDate.toISOString();
 </article>
 
 <style>
-  /* Bloom: each guide is an elevated card rather than a ruled row. */
   .post-card {
-    margin-bottom: 1rem;
-    background: var(--paper-raised);
-    border: 1px solid var(--mist);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
-  }
-  .post-card:hover {
-    box-shadow: var(--shadow-lift);
-    transform: translateY(-2px);
+    border-top: 1px solid var(--mist);
   }
   .post-card-link {
     display: block;
-    padding: clamp(1.3rem, 3vw, 1.8rem) clamp(1.3rem, 3vw, 2rem);
+    padding: 1.7rem 0;
     text-decoration: none;
     color: inherit;
   }
@@ -63,24 +53,17 @@ const isoDate = pubDate.toISOString();
   }
   .post-card-meta {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem 1rem;
+    gap: 1rem;
     margin: 0;
     font-size: 0.92rem;
     color: var(--ink-soft);
   }
   .post-card-tag {
-    padding: 0.2rem 0.65rem;
-    background: var(--paper-2);
-    border-radius: var(--radius-pill);
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .post-card-meta > * {
-    white-space: nowrap;
+    padding: 0.1rem 0.6rem;
+    border: 1px solid var(--mist-deep);
+    border-radius: 999px;
+    font-size: 0.82rem;
   }
   .post-card-read {
     margin-left: auto;
@@ -88,6 +71,6 @@ const isoDate = pubDate.toISOString();
     font-weight: 600;
   }
   .post-card-link:hover .post-card-read {
-    color: color-mix(in srgb, var(--brand) 70%, var(--ink));
+    color: var(--accent);
   }
 </style>

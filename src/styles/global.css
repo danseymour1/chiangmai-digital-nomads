@@ -1,38 +1,29 @@
 /* =============================================================
-   GLOBAL STYLES  —  Hallmark "Bloom": warm off-white paper, one
-   restrained terracotta accent, a single soft bloom, Geist type
+   GLOBAL STYLES  —  "Highland mist & lantern light"
    The two brand colours come from src/site.config.ts and are
    injected on the <html> tag, so you never edit them here.
    ============================================================= */
 
 :root {
-  --brand: #b3543c;
-  --accent: #b77d56;
+  --brand: #23423d;
+  --accent: #dd8a2e;
 
-  --ink: #1f130e;
-  --ink-soft: #51453e;
-  --muted: #6b6159;
-  --paper: #f9f4ee;
-  --paper-raised: #fdfaf6;
-  --paper-2: #f2ece4;
-  --paper-3: #e8e0d8;
-  --mist: #e3dcd4;
-  --mist-deep: #d6d0c9;
+  --ink: #1b2620;
+  --ink-soft: #4a574f;
+  --paper: #eff2ec;
+  --paper-raised: #f7f9f4;
+  --mist: #d3ddd3;
+  --mist-deep: #b9c6ba;
 
-  --font-display: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-label: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
 
   --measure: 68ch;
   --gap: clamp(1rem, 2.5vw, 2rem);
-  --space-section: clamp(4rem, 10vw, 7rem);
+  --space-section: clamp(3rem, 8vw, 6rem);
 
-  --radius: 16px;
-  --radius-pill: 999px;
-  --shadow: 0 12px 32px -18px rgba(31, 19, 14, 0.14),
-    0 1px 2px rgba(31, 19, 14, 0.06);
-  --shadow-lift: 0 22px 44px -20px rgba(179, 84, 60, 0.28),
-    0 2px 6px rgba(31, 19, 14, 0.06);
+  --radius: 6px;
+  --shadow: 0 1px 2px rgba(27, 38, 32, 0.06);
 }
 
 *,
@@ -63,8 +54,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
-  line-height: 1.7;
+  font-size: clamp(1.02rem, 0.98rem + 0.2vw, 1.14rem);
+  line-height: 1.65;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -78,26 +69,23 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.014em;
+  font-weight: 560;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
   color: var(--ink);
   margin: 0 0 0.5em;
+  font-optical-sizing: auto;
 }
 
 h1 {
-  font-size: clamp(2.3rem, 1.5rem + 3.4vw, 4.2rem);
-  line-height: 1.06;
-  letter-spacing: -0.022em;
+  font-size: clamp(2.3rem, 1.6rem + 3.2vw, 4rem);
+  font-weight: 600;
 }
 h2 {
-  font-size: clamp(1.6rem, 1.25rem + 1.5vw, 2.4rem);
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.5rem);
 }
 h3 {
-  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
+  font-size: clamp(1.3rem, 1.1rem + 0.7vw, 1.6rem);
 }
 
 p {
@@ -111,7 +99,7 @@ a {
   transition: color 0.15s ease;
 }
 a:hover {
-  color: color-mix(in srgb, var(--brand) 70%, var(--ink));
+  color: var(--accent);
 }
 
 :focus-visible {
@@ -166,10 +154,10 @@ hr {
 .prose blockquote {
   margin: 1.5em 0;
   padding: 0.2em 0 0.2em 1.3em;
-  border-left: 3px solid var(--brand);
+  border-left: 3px solid var(--accent);
   font-family: var(--font-display);
   font-size: 1.15em;
-  font-weight: 500;
+  font-style: italic;
   color: var(--ink);
 }
 .prose table {
@@ -199,43 +187,29 @@ main {
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 1rem;
-  letter-spacing: -0.005em;
-  padding: 0.75em 1.5em;
-  border-radius: var(--radius-pill);
+  padding: 0.7em 1.35em;
+  border-radius: var(--radius);
   border: 1.5px solid var(--brand);
   background: var(--brand);
   color: var(--paper-raised);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
+  transition: background 0.15s ease, transform 0.05s ease;
 }
 .btn:hover {
-  background: color-mix(in srgb, var(--brand) 88%, black);
+  background: color-mix(in srgb, var(--brand) 86%, black);
   color: var(--paper-raised);
-  box-shadow: var(--shadow-lift);
 }
 .btn:active {
   transform: translateY(1px);
 }
 .btn--ghost {
-  background: var(--paper-raised);
-  border-color: var(--mist-deep);
-  color: var(--ink);
+  background: transparent;
+  color: var(--brand);
 }
 .btn--ghost:hover {
-  background: var(--paper-2);
-  color: var(--ink);
-  box-shadow: none;
-}
-
-/* Bloom motion: content fades in, nothing slides or bounces. */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-}
-main {
-  animation: fade-in 0.45s ease-out both;
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
+  color: var(--brand);
 }
 
 .sr-only {
