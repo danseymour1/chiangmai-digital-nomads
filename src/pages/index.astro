@@ -97,52 +97,60 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
 </BaseLayout>
 
 <style>
+  /* Bloom: a centred hero sitting on one soft warm bloom. */
   .hero {
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid var(--mist);
   }
   .hero-inner {
     position: relative;
     z-index: 1;
-    padding-top: clamp(3.5rem, 9vw, 7rem);
+    padding-top: clamp(4rem, 11vw, 8.5rem);
     padding-bottom: clamp(3rem, 8vw, 6rem);
     max-width: 56rem;
+    text-align: center;
   }
   .hero-kicker {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 1.15rem;
+    font-family: var(--font-label);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     color: var(--brand);
-    margin: 0 0 0.6rem;
+    margin: 0 0 1.2rem;
   }
   .hero h1 {
-    margin: 0 0 0.7rem;
-    max-width: 16ch;
+    font-size: clamp(3rem, 6vw + 1rem, 5.75rem);
+    letter-spacing: -0.03em;
+    margin: 0 auto 1rem;
+    max-width: 14ch;
   }
   .hero-sub {
-    font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+    font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
     color: var(--ink-soft);
     max-width: 54ch;
-    margin: 0 0 1.8rem;
+    margin: 0 auto 2rem;
   }
   .hero-actions {
     display: flex;
+    justify-content: center;
     gap: 0.8rem;
     flex-wrap: wrap;
   }
   .hero-glow {
     position: absolute;
-    top: -30%;
-    right: -10%;
-    width: 55vw;
-    height: 55vw;
-    max-width: 620px;
-    max-height: 620px;
+    top: -20%;
+    left: 50%;
+    width: 80vw;
+    height: 80vw;
+    max-width: 900px;
+    max-height: 900px;
+    transform: translateX(-50%);
     background: radial-gradient(
       circle,
-      color-mix(in srgb, var(--accent) 30%, transparent),
-      transparent 62%
+      color-mix(in srgb, var(--accent) 22%, transparent),
+      color-mix(in srgb, var(--brand) 6%, transparent) 40%,
+      transparent 66%
     );
     pointer-events: none;
     z-index: 0;
@@ -156,7 +164,7 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
     align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   .section-head h2 {
     margin: 0;
@@ -169,7 +177,7 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
     white-space: nowrap;
   }
   .post-list {
-    border-bottom: 1px solid var(--mist);
+    margin-top: 1rem;
   }
   .empty {
     padding: 2rem 0;
@@ -181,32 +189,34 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
     border-radius: 4px;
   }
 
+  /* Bloom: an elevated, centred panel instead of a colour flood. */
   .community-teaser {
     margin-top: var(--space-section);
-    background: var(--brand);
-    color: var(--paper-raised);
+    padding-inline: clamp(1.1rem, 4vw, 2.5rem);
   }
   .community-inner {
-    padding-block: clamp(3rem, 7vw, 5rem);
-    max-width: 52rem;
+    position: relative;
+    overflow: hidden;
+    max-width: 62rem;
+    padding: clamp(3rem, 7vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+    text-align: center;
+    background:
+      radial-gradient(
+        ellipse at 50% 120%,
+        color-mix(in srgb, var(--accent) 20%, transparent),
+        transparent 60%
+      ),
+      var(--paper-2);
+    border-radius: calc(var(--radius) + 8px);
   }
   .community-teaser h2 {
-    color: var(--paper-raised);
     max-width: 20ch;
+    margin-inline: auto;
   }
   .community-teaser p {
-    color: color-mix(in srgb, var(--paper-raised) 88%, transparent);
+    color: var(--ink-soft);
     max-width: 56ch;
     font-size: 1.1rem;
-    margin-bottom: 1.6rem;
-  }
-  .community-teaser .btn {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--ink);
-  }
-  .community-teaser .btn:hover {
-    background: color-mix(in srgb, var(--accent) 88%, white);
-    color: var(--ink);
+    margin: 0 auto 1.8rem;
   }
 </style>

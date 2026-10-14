@@ -38,21 +38,26 @@ const isActive = (href: string) =>
 </header>
 
 <style>
+  /* Bloom: a floating pill nav over the paper. */
   .site-header {
-    border-bottom: 1px solid var(--mist);
-    background: color-mix(in srgb, var(--paper) 82%, white);
     position: sticky;
     top: 0;
     z-index: 50;
-    backdrop-filter: saturate(1.1) blur(6px);
+    padding: 0.75rem clamp(0.6rem, 2vw, 1.2rem) 0;
   }
   .header-inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
+    max-width: 74rem;
+    padding: 0.55rem 0.6rem 0.55rem 1.3rem;
+    background: color-mix(in srgb, var(--paper-raised) 88%, transparent);
+    border: 1px solid var(--mist);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
   }
   .logo {
     display: inline-flex;
@@ -62,8 +67,8 @@ const isActive = (href: string) =>
     color: var(--ink);
   }
   .logo-mark {
-    width: 1.35rem;
-    height: 1.35rem;
+    width: 1.3rem;
+    height: 1.3rem;
     flex: none;
     border-radius: 50% 50% 50% 2px;
     background: radial-gradient(
@@ -71,13 +76,12 @@ const isActive = (href: string) =>
       var(--accent),
       var(--brand) 75%
     );
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
   }
   .logo-text {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.18rem;
-    letter-spacing: -0.01em;
+    font-size: 1.05rem;
+    letter-spacing: -0.02em;
     line-height: 1;
   }
   nav {
@@ -86,38 +90,42 @@ const isActive = (href: string) =>
   }
   .nav-links {
     display: flex;
-    gap: 1.4rem;
+    gap: 0.25rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .nav-links a {
+    display: block;
     color: var(--ink-soft);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
+    font-size: 0.95rem;
+    padding: 0.45rem 0.95rem;
+    border-radius: var(--radius-pill);
+    transition: background 0.15s ease, color 0.15s ease;
   }
   .nav-links a:hover {
-    color: var(--brand);
+    color: var(--ink);
+    background: var(--paper-2);
   }
   .nav-links a[aria-current="page"] {
-    color: var(--brand);
-    border-bottom-color: var(--accent);
+    color: var(--ink);
+    background: var(--paper-3);
   }
   .nav-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.4rem;
+    padding: 0.6rem;
+    border-radius: var(--radius-pill);
   }
   .nav-bars,
   .nav-bars::before,
   .nav-bars::after {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
     background: var(--ink);
     position: relative;
@@ -129,10 +137,10 @@ const isActive = (href: string) =>
     position: absolute;
   }
   .nav-bars::before {
-    top: -7px;
+    top: -6px;
   }
   .nav-bars::after {
-    top: 7px;
+    top: 6px;
   }
 
   @media (max-width: 640px) {
@@ -141,29 +149,24 @@ const isActive = (href: string) =>
     }
     .nav-links {
       position: absolute;
-      top: 100%;
+      top: calc(100% + 0.5rem);
       right: 0;
       left: 0;
       flex-direction: column;
-      gap: 0;
+      gap: 0.15rem;
       background: var(--paper-raised);
-      border-bottom: 1px solid var(--mist);
-      padding: 0.5rem 0;
+      border: 1px solid var(--mist);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.5rem;
       display: none;
     }
     .nav-links.open {
       display: flex;
     }
-    .nav-links li {
-      padding: 0 clamp(1.1rem, 4vw, 2.5rem);
-    }
     .nav-links a {
-      display: block;
-      padding: 0.7rem 0;
-      border-bottom: 1px solid var(--mist);
-    }
-    .nav-links li:last-child a {
-      border-bottom: none;
+      padding: 0.75rem 1rem;
+      border-radius: calc(var(--radius) - 6px);
     }
   }
 </style>
