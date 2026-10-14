@@ -1,0 +1,193 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { site } from "../../site.config.ts";
+
+const stories = (
+  await getCollection("community", ({ data }) => !data.draft)
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const description = `Real stories from people living and working remotely in ${site.place}: food, coworking, day trips and life as a nomad. Share yours.`;
+---
+
+<BaseLayout title="Community" description={description} path="/community">
+  <div class="wrap page-head">
+    <h1>Share your {site.place} story</h1>
+    <p class="lead">
+      The best guidance here comes from people actually living it. Read
+      what other nomads have found, then add your own: a favourite spot,
+      a hard-won lesson, or how you made {site.place} home.
+    </p>
+    <a href="/community-submit/" class="btn">Submit your story</a>
+  </div>
+
+  <section class="wrap stories" aria-labelledby="stories-heading">
+    <h2 id="stories-heading">Community stories</h2>
+
+    {stories.length === 0 ? (
+      <div class="empty">
+        <p>
+          No community stories yet. Yours could be the first: tell us
+          about your {site.place} and we'll share it here, with credit
+          to you.
+        </p>
+        <a href="/community-submit/" class="btn btn--ghost">
+          Submit your story
+        </a>
+      </div>
+    ) : (
+      <div data-story-filter>
+        <div class="tags" role="group" aria-label="Filter stories by tag">
+          <button type="button" class="tag" data-tag="" aria-pressed="true">
+            All
+          </button>
+          {site.communityTags.map((tag) => (
+            <button type="button" class="tag" data-tag={tag} aria-pressed="false">
+              {tag}
+            </button>
+          ))}
+        </div>
+
+        <p class="sr-only" aria-live="polite" data-status></p>
+
+        <ul class="card-grid">
+          {stories.map((story) => (
+            <li data-tags={JSON.stringify(story.data.tags)}>
+              <Card
+                href={`/community/${story.id}/`}
+                title={story.data.title}
+                description={story.data.description}
+                tag={story.data.tags[0]}
+                byline={`By ${story.data.author}`}
+                image={story.data.image}
+                cta="Read story"
+              />
+            </li>
+          ))}
+        </ul>
+
+        <div class="empty" data-no-match hidden>
+          <p>
+            No stories tagged <strong data-no-match-tag></strong> yet.
+          </p>
+          <button type="button" class="btn btn--ghost" data-show-all>
+            Show all stories
+          </button>
+        </div>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-story-filter]");
+  if (root) {
+    const buttons = root.querySelectorAll<HTMLButtonElement>("button[data-tag]");
+    const items = root.querySelectorAll<HTMLElement>("li[data-tags]");
+    const noMatch = root.querySelector<HTMLElement>("[data-no-match]")!;
+    const noMatchTag = root.querySelector<HTMLElement>("[data-no-match-tag]")!;
+    const status = root.querySelector<HTMLElement>("[data-status]")!;
+
+    const filter = (tag: string) => {
+      let shown = 0;
+      items.forEach((item) => {
+        const tags: string[] = JSON.parse(item.dataset.tags ?? "[]");
+        const match = !tag || tags.includes(tag);
+        item.hidden = !match;
+        if (match) shown++;
+      });
+      buttons.forEach((b) =>
+        b.setAttribute("aria-pressed", String(b.dataset.tag === tag))
+      );
+      noMatch.hidden = shown > 0;
+      noMatchTag.textContent = tag;
+      const noun = shown === 1 ? "story" : "stories";
+      status.textContent = tag
+        ? `Showing ${shown} ${noun} tagged ${tag}`
+        : `Showing ${shown} ${noun}`;
+    };
+
+    buttons.forEach((b) =>
+      b.addEventListener("click", () => filter(b.dataset.tag ?? ""))
+    );
+    root
+      .querySelector("[data-show-all]")
+      ?.addEventListener("click", () => filter(""));
+  }
+</script>
+
+<style>
+  .page-head {
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+  }
+  .page-head h1 {
+    font-size: clamp(1.9rem, 1.4rem + 2vw, 2.8rem);
+    max-width: 24ch;
+  }
+  .lead {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin-bottom: 1.6rem;
+  }
+  .stories {
+    margin-top: var(--space-section);
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+    border-top: 1px solid var(--mist);
+  }
+  .stories h2 {
+    margin-bottom: 1.2rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  .tag {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    border: 1.5px solid var(--mist-deep);
+    border-radius: 999px;
+    background: var(--paper-raised);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .tag:hover {
+    border-color: var(--brand);
+    color: var(--brand);
+  }
+  .tag:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .tag[aria-pressed="true"] {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--paper-raised);
+  }
+  .card-grid > li[hidden] {
+    display: none;
+  }
+  .empty {
+    background: var(--paper-raised);
+    border: 1px solid var(--mist);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.7rem;
+    max-width: 40rem;
+  }
+  .empty[hidden] {
+    display: none;
+  }
+  .empty p {
+    margin-top: 0;
+    color: var(--ink-soft);
+  }
+  .empty strong {
+    color: var(--ink);
+  }
+</style>

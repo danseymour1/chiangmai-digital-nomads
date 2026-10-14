@@ -127,9 +127,34 @@ Contact page. Leave it blank and the page shows your email address instead.
 
 **Community** — make a free form at [tally.so](https://tally.so) (allows photo
 uploads), set it to email you for review, paste its share link into
-`communityFormLink`. It appears inline on the Community page. Stories come to you
-first; when you approve one, it becomes a post like any other guide — the review
-step is what keeps spam off the site.
+`communityFormLink`. It appears inline on the Submit your story page
+(/community-submit/). Stories come to you first; when you approve one, it becomes
+a community story (see below) — the review step is what keeps spam off the site.
+
+## Community stories
+
+Reader stories are kept separate from the guides. Each one is a Markdown file in
+`src/content/community/` and appears at /community/your-file-name/ and in the
+filterable grid on the Community page (never in /blog). The top of the file:
+
+```
+---
+title: "How I found a flat in Nimman"
+author: "Sam Lee"
+pubDate: 2026-10-14
+description: "One or two sentences shown on the card."
+tags: ["Where to work", "My story"]
+image: "/images/sam-flat.jpg"   # optional
+imageAlt: "Sam's desk by the window"   # optional
+draft: false
+---
+```
+
+The filter tags are the `communityTags` list in `src/site.config.ts` — edit it
+there. Each story's tags must come from that list (the build tells you if not).
+
+If you delete the very last story, clear Astro's cache before building
+(`rm -rf node_modules/.astro .astro`), otherwise the old story can linger.
 
 ---
 

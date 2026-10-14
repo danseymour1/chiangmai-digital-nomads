@@ -22,7 +22,7 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
       <p class="hero-sub">{site.heroSubheading}</p>
       <div class="hero-actions">
         <a href="/blog" class="btn">Read the guides</a>
-        <a href="/community" class="btn btn--ghost">Share your story</a>
+        <a href="/community-submit/" class="btn btn--ghost">Share your story</a>
       </div>
     </div>
     <div class="hero-glow" aria-hidden="true"></div>
@@ -62,7 +62,7 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
         from, what surprised you. Add a few photos and we'll turn it
         into a post other nomads will actually read.
       </p>
-      <a href="/community" class="btn">Share your story</a>
+      <a href="/community-submit/" class="btn">Share your story</a>
     </div>
   </section>
 </BaseLayout>

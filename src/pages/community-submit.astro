@@ -11,15 +11,20 @@ const tallyEmbed = isTally
     "alignLeft=1&transparentBackground=1&dynamicHeight=1"
   : "";
 
-const description = `Share your story of living or working remotely in ${site.place}. Fill in the form, add a few photos, and we'll turn it into a post.`;
+const description = `Submit your story of living or working remotely in ${site.place}. Fill in the form, add a few photos, and we'll turn it into a community story.`;
 ---
 
-<BaseLayout title="Community" description={description} path="/community">
+<BaseLayout
+  title="Submit your story"
+  description={description}
+  path="/community-submit"
+>
   <div class="wrap page">
-    <h1>Share your {site.place} story</h1>
+    <p class="back"><a href="/community/">← Community stories</a></p>
+    <h1>Submit your story</h1>
     <p class="lead">
-      The best guidance here comes from people actually living it. Tell
-      us your story — add a few photos — and we'll shape it into a post
+      Tell us what living or working in {site.place} is really like for
+      you. Add a few photos and we'll shape it into a community story
       that other nomads can find and learn from. You get the credit.
     </p>
 
@@ -36,8 +41,9 @@ const description = `Share your story of living or working remotely in ${site.pl
           live. This is the bit that keeps the site good.
         </li>
         <li>
-          <strong>It becomes a post.</strong> We tidy it up, add it to
-          the guides, and credit you. We'll email you the link.
+          <strong>It goes live.</strong> We tidy it up, add it to the
+          <a href="/community/">community stories</a>, and credit you.
+          We'll email you the link.
         </li>
       </ol>
     </div>
@@ -105,7 +111,8 @@ const description = `Share your story of living or working remotely in ${site.pl
         <p>
           When a story comes in and you're happy with it, you (or
           Claude Code) turn it into a Markdown file in
-          <code>src/content/posts/</code> — the same as any other guide.
+          <code>src/content/community/</code>, and it appears on the
+          Community page.
         </p>
       </div>
     )}
@@ -114,8 +121,19 @@ const description = `Share your story of living or working remotely in ${site.pl
 
 <style>
   .page {
-    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    padding-top: clamp(1.5rem, 4vw, 3rem);
     max-width: 46rem;
+  }
+  .back {
+    margin: 0 0 1.2rem;
+    font-size: 0.95rem;
+  }
+  .back a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .back a:hover {
+    color: var(--brand);
   }
   .lead {
     font-size: 1.2rem;

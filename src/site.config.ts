@@ -65,8 +65,14 @@ export const site = {
     communityFormLink: "https://tally.so/r/PdMK0e",
   },
 
+  /* ---- Community story tags ------------------------------ */
+  // The tags readers can filter community stories by, in the order
+  // they appear on the Community page. Each story's tags must come
+  // from this list (the build stops and says so if one doesn't).
+  communityTags: ["Food", "Drink", "Where to work", "Day trips", "My story"],
+
   /* ---- Social + contact (all optional) -------------------- */
-  email: "hello@chiangmaidigitalnomads.com",
+  email: "info@chiangmaidigitalnomads.com",
   social: {
     instagram: "",
     facebook: "",

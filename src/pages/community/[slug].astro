@@ -1,0 +1,186 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../site.config.ts";
+
+export async function getStaticPaths() {
+  const stories = await getCollection("community", ({ data }) => !data.draft);
+  return stories.map((story) => ({
+    params: { slug: story.id },
+    props: { story },
+  }));
+}
+
+const { story } = Astro.props;
+const { Content } = await render(story);
+const d = story.data;
+const path = `/community/${story.id}/`;
+
+const dateStr = d.pubDate.toLocaleDateString(site.language, {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: d.title,
+  description: d.description,
+  datePublished: d.pubDate.toISOString(),
+  inLanguage: site.language,
+  author: { "@type": "Person", name: d.author },
+  publisher: { "@type": "Organization", name: site.name },
+  mainEntityOfPage: new URL(path, site.url).href,
+  ...(d.tags.length > 0 && { keywords: d.tags.join(", ") }),
+  ...(d.image && { image: new URL(d.image, site.url).href }),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Community",
+      item: new URL("/community/", site.url).href,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: d.title,
+      item: new URL(path, site.url).href,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  path={path}
+  image={d.image}
+  type="article"
+  publishedDate={d.pubDate}
+  schema={[articleSchema, breadcrumbSchema]}
+>
+  <article class="wrap story">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/community/">Community</a>
+    </nav>
+
+    <header class="story-header">
+      <p class="story-kicker">Community story</p>
+      <h1>{d.title}</h1>
+      <p class="story-meta">
+        By <strong>{d.author}</strong>
+        <span aria-hidden="true">·</span>
+        <time datetime={d.pubDate.toISOString()}>{dateStr}</time>
+      </p>
+      {d.tags.length > 0 && (
+        <ul class="story-tags" aria-label="Tags">
+          {d.tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+      )}
+    </header>
+
+    {d.image && (
+      <img
+        class="story-cover"
+        src={d.image}
+        alt={d.imageAlt ?? d.title}
+        width="1200"
+        height="630"
+        loading="eager"
+      />
+    )}
+
+    <div class="prose story-body">
+      <Content />
+    </div>
+
+    <footer class="story-foot">
+      <a href="/community/" class="btn btn--ghost">← More community stories</a>
+      <a href="/community-submit/" class="btn">Submit your story</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .story {
+    padding-top: clamp(1.5rem, 4vw, 3rem);
+    max-width: 48rem;
+  }
+  .crumbs {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.2rem;
+  }
+  .crumbs a {
+    color: var(--ink-soft);
+  }
+  .crumbs a:hover {
+    color: var(--brand);
+  }
+  .story-kicker {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .story-header h1 {
+    margin-bottom: 0.4rem;
+  }
+  .story-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .story-meta strong {
+    color: var(--ink);
+  }
+  .story-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .story-tags li {
+    padding: 0.1rem 0.6rem;
+    border: 1px solid var(--mist-deep);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+  .story-cover {
+    width: 100%;
+    border-radius: var(--radius);
+    margin: 1.8rem 0;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+  }
+  .story-body {
+    margin-top: 1.5rem;
+  }
+  .story-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: var(--space-section);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--mist);
+  }
+</style>

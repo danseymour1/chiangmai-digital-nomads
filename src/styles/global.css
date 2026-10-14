@@ -223,3 +223,27 @@ main {
   white-space: nowrap;
   border: 0;
 }
+
+/* Responsive grid of cards (guides' "You might also like",
+   community stories): 1 across on mobile, 2 on tablet, 3 on desktop. */
+.card-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+.card-grid > li {
+  display: flex;
+}
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

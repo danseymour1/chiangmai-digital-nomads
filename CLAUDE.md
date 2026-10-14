@@ -40,5 +40,12 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - Images live in public/images/. Use one or two suitable ones per post: a cover (image + a descriptive imageAlt), optionally one inline.
 - If no suitable image exists yet, DO NOT invent a filename. Leave image fields out and add an HTML comment at the top listing the images to source, e.g. <!-- IMAGES TO ADD: cover of a Nimman café; a coworking desk -->. I'll upload them later.
 
+## Community stories
+- Reader-submitted stories are NOT guides. Each is one file in src/content/community/ (not src/content/posts/), live at /community/<filename>/ and in the Community page grid only.
+- Frontmatter: title, author (the reader's name/credit), pubDate, description, tags, optional image/imageAlt, draft.
+- tags must come from communityTags in src/site.config.ts (Food, Drink, Where to work, Day trips, My story); the build fails otherwise. Edit that list to add tags.
+- Keep the reader's own first-person voice, lightly tidied (British English, no em-dashes in body text). Don't add facts they didn't give.
+- src/content/community/example-story.md is a placeholder to delete once real stories exist. If deleting the last story, run rm -rf node_modules/.astro .astro before building, or Astro keeps serving the cached entry.
+
 ## Publishing
 - After writing, show me the file, then commit and push. If I say I'm unsure, set draft: true so it stays hidden until I approve.
