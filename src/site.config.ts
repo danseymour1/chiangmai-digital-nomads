@@ -59,7 +59,7 @@ export const site = {
     // Tally link for community story submissions (supports photo
     // uploads), e.g. "https://tally.so/r/abc123". Leave blank and
     // the page shows setup instructions instead.
-    communityFormLink: "",
+    communityFormLink: "https://tally.so/r/PdMK0e",
   },
 
   /* ---- Social + contact (all optional) -------------------- */
