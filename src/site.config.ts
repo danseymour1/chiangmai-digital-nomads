@@ -75,7 +75,7 @@ export const site = {
 
   /* ---- Footer -------------------------------------------- */
   footerNote:
-    "Made by remote workers in northern Thailand. Not sponsored, not affiliated — just what we wish we'd known.",
+    "Written in Chiang Mai, for the nomads who come after.",
 };
 
 export type SiteConfig = typeof site;

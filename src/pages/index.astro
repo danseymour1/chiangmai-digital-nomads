@@ -2,11 +2,16 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
+import Card from "../components/Card.astro";
 import { site } from "../site.config.ts";
 
 const posts = (await getCollection("posts", ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 4);
+
+const stories = (await getCollection("community", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
 <BaseLayout
@@ -65,6 +70,30 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
       <a href="/community-submit/" class="btn">Share your story</a>
     </div>
   </section>
+
+  {stories.length > 0 && (
+    <section class="wrap home-section latest-stories">
+      <div class="section-head section-head--spaced">
+        <h2>Latest community stories</h2>
+        <a href="/community/" class="section-link">All stories</a>
+      </div>
+      <ul class="card-grid">
+        {stories.map((story) => (
+          <li>
+            <Card
+              href={`/community/${story.id}/`}
+              title={story.data.title}
+              description={story.data.description}
+              tag={story.data.tags[0]}
+              byline={`By ${story.data.author}`}
+              image={story.data.image}
+              cta="Read story"
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </BaseLayout>
 
 <style>
@@ -131,6 +160,9 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
   }
   .section-head h2 {
     margin: 0;
+  }
+  .section-head--spaced {
+    margin-bottom: 1.5rem;
   }
   .section-link {
     font-weight: 600;
