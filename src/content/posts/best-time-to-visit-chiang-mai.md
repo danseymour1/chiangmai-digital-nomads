@@ -17,10 +17,6 @@ faqs:
     a: "April is the hottest month, with average daytime highs of around 36°C and some days going well beyond that. A condo with good air conditioning matters far more in March to May than at any other time of year."
 ---
 
-<!-- IMAGES TO ADD (optional inline): a hazy burning-season skyline, or the rice fields in the green season -->
-
-<!-- VERIFY BEFORE PUBLISHING (Dan): Yi Peng 2026 dates (24–25 Nov) come from travel guides citing the TAT schedule, confirm closer to the time. Climate figures are long-term averages (TMD table via chiangmai.net, WeatherSpark). The 2026 burn ban (1 Jan to 31 May) is from Thairath reporting of the provincial announcement. -->
-
 Chiang Mai works well for remote workers for most of the year, but not all of it. The cool season from November to mid-February is the clear favourite, the rainy season offers the best value, and the burning season in March and April is the one period many nomads plan around. Here is how the year breaks down.
 
 ## When is the best time to visit Chiang Mai as a digital nomad?
