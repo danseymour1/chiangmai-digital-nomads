@@ -49,9 +49,9 @@ Hub53 is on Chonprathan Road in Suthep, about an eight-minute walk from Nimmanha
 
 - **Price:** ฿12,500–23,000 a month, or ฿2,900–6,200 a week; the cheapest rooms share a bathroom. Rates include a 24-hour coworking membership, electricity, water, weekly cleaning and unlimited coffee.
 - **Area:** Suthep, beside Nimman.
-- **Coworking:** on site, with open desks, private offices and a meeting room; non-members pay around ฿189 a day or ฿3,299 a month.
+- **Coworking:** on site, with open desks, private offices and a meeting room; non-members pay around ฿195 a day, or ฿1,999–3,399 a month depending on hours.
 - **Who it suits:** budget-conscious nomads who want a social base close to Nimman.
-- **Upsides:** utilities included, a well-equipped shared kitchen, a pleasant common area and an active WhatsApp community.
+- **Upsides:** utilities included, a well-equipped shared kitchen, a pleasant common area, an active WhatsApp community, and good street food within a two-minute walk.
 - **Downsides:** the coworking tables are small and closely packed, and the cheapest rooms are only 9 square metres.
 
 Monthly rates are offered only from 1 March to 30 September. During the high season, from October to February, Hub53 rents by the day or week only, which is worth factoring in alongside the [best time to visit Chiang Mai](/best-time-to-visit-chiang-mai/).

@@ -31,7 +31,7 @@ Nimman is a compact grid of numbered sois running off Nimmanhaemin Road, anchore
 
 ## 2. Santitham and Chang Phueak — best value near Nimman
 
-Santitham is a residential grid of apartment blocks and family-run rice-and-curry shops between Nimman and the Old City's north-west corner. Neighbouring Chang Phueak, just north of the moat, has a similar mix of housing and prices, so treat the two as one area. Its landmark is the Chang Phueak Gate night market, where the "Cowboy Hat Lady" has served braised pork leg on rice (khao kha moo) for years.
+Santitham is a residential grid of apartment blocks and family-run rice-and-curry shops between Nimman and the Old City's north-west corner. Neighbouring Chang Phueak, just north of the moat, has a similar mix of housing and prices, so treat the two as one area. Nearby Jed Yod is similar again: cheaper than Nimman, with a local feel and plenty of students thanks to the university next door. The area's landmark is the Chang Phueak Gate night market, where the "Cowboy Hat Lady" has served braised pork leg on rice (khao kha moo) for years.
 
 - **Rent:** ฿6,000–14,000 for a studio or simple one-bedroom; newer condos with pools cost more.
 - **Coworking nearby:** RealSpace in Chang Phueak, with Nimman's spaces a short ride away.
@@ -47,9 +47,9 @@ The Old City is the square inside the moat, packed with [temples](/what-to-see-a
 
 - **Rent:** ฿8,000–20,000, with basic studios available for less.
 - **Coworking nearby:** Alt_ChiangMai (behind Wat Phra Singh), Punspace at Wiang Kaew and at Tha Phae Gate, and UnionSPACE.
-- **Who it suits:** those who prioritise atmosphere and walking over modern facilities.
+- **Who it suits:** shorter stays, and those who prioritise atmosphere and walking over modern facilities.
 - **Upsides:** walkable, historic, and well served by [coworking](/best-coworking-spaces-in-chiang-mai/).
-- **Downsides:** height limits mean mostly low-rise apartments and shophouses with few pools or gyms; older buildings can suffer from damp and weak water pressure; tourist crowds in high season.
+- **Downsides:** height limits mean mostly low-rise apartments and shophouses with few pools or gyms; older buildings can suffer from damp and weak water pressure; and it is very tourist-heavy, which many long-stayers find wears thin, so it is better as a first base than for a long lease.
 
 ## 4. Suthep and the university area — best for quiet
 
@@ -77,9 +77,9 @@ The suburbs offer gated housing estates (moo baan) with gardens and pools. Hang 
 
 - **Rent:** ฿15,000–40,000 for a two- or three-bedroom house; simple condos in Hang Dong can start well below city prices.
 - **Coworking nearby:** little; Ferment Space in Nam Phrae, towards Hang Dong, is one of the few options.
-- **Who it suits:** families, couples who want a house, and long-stayers who work from home.
-- **Upsides:** far more space for the money, greenery and quiet.
-- **Downsides:** you will need a scooter or car, central Chiang Mai is roughly a 20–30 minute drive, and the social scene is thin.
+- **Who it suits:** families, couples who want a house, long-stayers who work from home, and anyone after more of an expat community.
+- **Upsides:** far more space for the money, greenery and quiet, and an established expat scene in Hang Dong.
+- **Downsides:** you will need a scooter or car, central Chiang Mai is roughly a 20–30 minute drive, and the digital nomad social scene is thin.
 
 ## How to choose
 
@@ -89,5 +89,6 @@ The suburbs offer gated housing estates (moo baan) with gardens and pools. Hang 
 - **Greenery near town:** Suthep.
 - **River views and a central address:** the riverside.
 - **A house and garden:** the suburbs.
+- **Affordable condos further out:** San Sai, around Central Festival mall, which has plenty of condos on both short and long leases.
 
 Book somewhere flexible for your [first week or two](/settling-in-chiang-mai/), then view places in person before committing to a lease. Most foreigners rent while on a tourist or long-stay visa, but [visa rules](/digital-nomad-visas-chiang-mai/) change, so check official Thai immigration and embassy sources for your situation.

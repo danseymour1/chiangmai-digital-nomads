@@ -21,7 +21,7 @@ faqs:
 
 For most remote workers who want to spend months rather than weeks in Chiang Mai, the answer is the **Destination Thailand Visa (DTV)**. It is valid for five years, gives up to 180 days per entry and can be extended once in Thailand. Shorter trips can still be made on visa exemption, but since 15 September 2026 that allows only 30 days for UK, US and most EU passports. The long-term alternatives (LTR, Thailand Privilege and education visas) suit narrower groups of people.
 
-Thai visa rules change often. Before booking, check the current requirements on the official Thai e-Visa website (thaievisa.go.th) and with your nearest Thai embassy or consulate.
+Thai visa rules change often, so before booking, check the current requirements on the official Thai e-Visa website (thaievisa.go.th) and with your nearest Thai embassy or consulate.
 
 ## How long can you stay in Thailand without a visa?
 
@@ -29,7 +29,7 @@ From 15 September 2026, nationals of 60 countries and territories, including the
 
 - **Extension:** once, by 30 days, at an immigration office for ฿1,900, at the officer's discretion.
 - **Land arrivals:** limited to two exemption entries a year.
-- **Purpose:** the exemption is framed around tourism, so it is not designed for extended periods of remote work.
+- **Purpose:** the exemption is framed around tourism, not extended remote work.
 - **Transition:** anyone stamped in on or before 14 September 2026 keeps the 60 days they were given.
 
 All visitors also need to complete the online Thailand Digital Arrival Card (TDAC) before arriving.
@@ -43,9 +43,9 @@ The DTV launched in July 2024 for remote workers, freelancers and people taking 
 - **Extension:** one extension of up to 180 days per entry, at an immigration office in Thailand for ฿1,900. Leaving and re-entering starts a fresh 180 days.
 - **Financial proof:** at least ฿500,000, usually shown through recent bank statements. Embassies vary on how long the money must have been held.
 - **Work evidence:** an employment contract or employer letter, company documents, or a freelance portfolio and invoices showing clients outside Thailand.
-- **Fee:** ฿10,000 at missions that charge in baht. Embassies elsewhere charge an equivalent in local currency, so the exact amount depends on where you apply.
+- **Fee:** ฿10,000 at missions that charge in baht; elsewhere, the local-currency equivalent.
 
-Applications are made online through the Thai e-Visa website and assigned to the embassy or consulate covering the applicant's location. They cannot be made from inside Thailand.
+Applications are made online through the Thai e-Visa website and assigned to the embassy or consulate covering the applicant's location, and cannot be made from inside Thailand. Approval can be quick, sometimes within a week, though times vary.
 
 ## What changed for the DTV in August 2026?
 

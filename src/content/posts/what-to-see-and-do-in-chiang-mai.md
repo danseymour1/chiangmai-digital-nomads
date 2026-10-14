@@ -19,7 +19,7 @@ faqs:
     a: "Expect roughly ฿1,000–1,500 for a half-day class and ฿1,500–2,500 for a full day, usually including a market visit, all ingredients and the meal itself. Booking directly with the school is often cheaper than going through an agent."
 ---
 
-Chiang Mai's best sights sit inside or just outside the moat, so most fit around a working week, leaving the [day trips](/day-trips-from-chiang-mai/) further out for weekends. Here are eight worth doing, with typical costs; fees change, so treat prices as a guide.
+Chiang Mai's best sights sit inside or just outside the moat, so most fit around a working week, leaving the [day trips](/day-trips-from-chiang-mai/) further out for weekends. Here are eight worth doing; fees change, so treat prices as a guide.
 
 ## 1. Wat Chedi Luang and the Old City temples — best for a first afternoon
 
@@ -60,7 +60,7 @@ Every Sunday, Ratchadamnoen Road closes to traffic and fills with food, crafts a
 
 - **Where:** Ratchadamnoen Road (Sunday) and Wua Lai Road (Saturday).
 - **Cost:** free to browse; street food mostly ฿30–80 a dish.
-- **Best time:** arrive around 5pm, before the crowds peak.
+- **Best time:** stalls open from around 4pm; arrive by 5pm, before the crowds peak.
 - **Who it suits:** everyone.
 - **Upsides:** great value food and a lively atmosphere.
 - **Downsides:** packed by 7pm. When the national anthem plays at 6pm, the market stands still, so do the same.
@@ -115,4 +115,4 @@ Yi Peng and Loy Krathong, expected on 24 to 25 November 2026, fill the moat and 
 
 ## How do remote workers fit it all in?
 
-Temples and Doi Suthep work best as early outings before the working day, while the walking streets and lakes belong to weekends. Weekday evenings suit cooking classes and Muay Thai. Nimman and Suthep put Wat Umong and Doi Suthep close by, while the Old City puts the temples on your doorstep, as covered in [the best areas to live in Chiang Mai](/best-areas-to-live-in-chiang-mai/). Most of the city's sights are cheap or free, which helps keep [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/) low.
+Temples and Doi Suthep work best as early outings before the working day, while the walking streets and lakes belong to weekends. Weekday evenings suit cooking classes and Muay Thai, and later the city's bars range from live music and jazz to cocktail bars and Thai clubs. Foot massage shops are on almost every street, and for a full Thai massage, some centres employ former prisoners to help them back into work. Nimman and Suthep put Wat Umong and Doi Suthep close by, while the Old City puts the temples on your doorstep, as covered in [the best areas to live in Chiang Mai](/best-areas-to-live-in-chiang-mai/). Most of the city's sights are cheap or free, which helps keep [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/) low.

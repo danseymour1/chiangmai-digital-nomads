@@ -34,18 +34,13 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - Keep normal prose for narrative / single-topic posts.
 
 ## Trusted sources
-- When researching facts for a Chiang Mai post, FIRST consult the relevant ones of my own first-hand articles below, THEN the community stories in src/content/community/, THEN supplement with web research.
-- Treat my own articles and the community stories as the priority source for local detail. If web research contradicts them, flag the conflict for me rather than overriding silently.
-- Use them for facts and local knowledge only, not for writing style (the site stays third person per the Voice rules).
-- My Chiang Mai articles:
-  - https://danroundtheworld.com/why-i-moved-to-chiang-mai-as-a-digital-nomad/
-  - https://danroundtheworld.com/digital-nomad-guide-to-chiang-mai/
-  - https://danroundtheworld.com/best-coworking-spaces-in-chiang-mai/
-  - https://danroundtheworld.com/how-much-does-it-cost-being-a-digital-nomad-in-chiang-mai/
-  - https://danroundtheworld.com/malaysia-vs-thailand-for-digital-nomads/
+- When researching facts for a Chiang Mai post, FIRST read the relevant files in the local reference/ folder (my own first-hand articles), THEN the community stories in src/content/community/, THEN supplement with web research.
+- reference/ files: cost-of-living.md, coworking.md, digital-nomad-guide.md, why-i-moved.md, malaysia-vs-thailand.md. The folder is local only (excluded from git because the repo is public); never commit it.
+- Treat my articles and the community stories as the priority source for local detail and recommendations. Where a changeable fact (prices, visa rules, opening hours) conflicts with current information, use the current, correct information, but always flag the conflict for me rather than overriding silently.
+- Use them for facts and local knowledge only, not for writing style (the site stays third person per the Voice rules). Convert any £/$/€ figures to ฿ or leave them out.
 
 ## Recommending specific places
-- When recommending specific places (cafés, coworking, restaurants, etc.) in any post, follow the Trusted sources order: my articles first, then real mentions in the community stories (crediting the contributor where it fits), then web research for anything missing.
+- When recommending specific places (cafés, coworking, restaurants, etc.) in any post, follow the Trusted sources order: my reference/ articles first, then real mentions in the community stories (crediting the contributor where it fits), then web research for anything missing.
 - Never invent places. Flag anything uncertain (possibly closed, moved, or unverified details) for me to verify.
 
 ## Internal links

@@ -23,7 +23,7 @@ Settling into Chiang Mai is straightforward if the basics are done in the right 
 
 ## How do you get from Chiang Mai airport into town?
 
-Chiang Mai International Airport sits inside the city, about 15 to 20 minutes by car from the Old City and Nimman. The easiest option is a **Grab** or **Bolt** car booked from the arrivals hall, typically around ฿100–200 depending on demand and destination. Grab has a designated pickup point, and the app shows the way to it.
+Most arrivals fly in from Bangkok, though there are also direct flights from Kuala Lumpur, Singapore, Taipei, Seoul and several Chinese cities. Chiang Mai International Airport sits inside the city, about 15 to 20 minutes by car from the Old City and Nimman. The easiest option is a **Grab** or **Bolt** car booked from the arrivals hall, typically around ฿100–200 depending on demand and destination. Grab has a designated pickup point, and the app shows the way to it.
 
 The official taxi counter inside arrivals gives a set fare, generally in a similar range, so it is a good fallback if your phone has no data yet. Avoid touts offering rides outside the counter system. Before you fly, complete the Thailand Digital Arrival Card online, which is required for foreign visitors.
 
@@ -51,8 +51,10 @@ Monthly rentals are best found in person: walk into condo buildings and ask at r
 
 ## How do you get around Chiang Mai?
 
+Within each area, such as the Old City or Nimman, walking is easy. Getting between areas needs wheels:
+
 - **Grab and Bolt** — the simplest option for newcomers. A Grab motorbike from Nimman to the Old City can cost as little as ฿35, with a car around ฿120, more at peak times.
-- **Songthaews** — the red shared trucks. Flag one down, agree the fare before getting in, and expect around ฿30–60 for most trips within the city.
+- **Songthaews** — the red shared trucks. Flag one down, agree the fare before getting in, and expect around ฿30–60 for most trips within the city. Few long-staying nomads use them regularly, as most switch to their own transport.
 - **Scooter rental** — the most popular choice for longer stays. A basic scooter is available from about ฿300 a day or ฿3,000 a month, with prices rising in peak season.
 
 Before renting a scooter, check your licence. Foreign riders need a valid motorcycle licence, either a Thai one or a home licence with an International Driving Permit that includes motorcycles. Many car-only permits do not cover scooters. Police checkpoints in Chiang Mai stop foreign riders regularly, and on-the-spot fines are common. Helmets are compulsory for rider and passenger. Riding unlicensed can also void travel insurance, which matters far more than any fine.

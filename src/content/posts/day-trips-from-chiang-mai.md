@@ -21,7 +21,7 @@ faqs:
 
 For most remote workers, the best day trips from Chiang Mai are Doi Suthep and Doi Pui (half a day, close to town), Doi Inthanon (the classic mountain day) and the Sticky Waterfall (free and unusual). Most of the eight below sit within two hours of the city.
 
-Timing matters. The cool season from November to February brings clear views, while smoke in March and April can hide them completely, as the guide to the [best time to visit Chiang Mai](/best-time-to-visit-chiang-mai/) explains. Waterfalls are fullest in the rainy season, when mountain roads are also most slippery.
+Timing matters. The cool season from November to February brings clear views, while smoke in March and April can hide them completely, as covered in the [best time to visit Chiang Mai](/best-time-to-visit-chiang-mai/). Waterfalls are fullest in the rainy season, when mountain roads are also most slippery.
 
 ## 1. Doi Suthep and Doi Pui — best for a half day
 
@@ -45,7 +45,7 @@ Thailand's highest mountain, at 2,565 metres, is the classic full-day trip.
 - **Upsides:** waterfalls, cloud forest, the twin pagodas and their gardens.
 - **Downsides:** a long day, and a cold summit at dawn in the cool season.
 
-The Kew Mae Pan nature trail, the highlight for many, is only open from November to May and charges its own guide fee. Bring a warm layer: summit temperatures in December and January can drop close to freezing.
+The Kew Mae Pan nature trail, a highlight, is only open from November to May and charges its own guide fee. Bring a warm layer: summit temperatures in December and January can drop close to freezing.
 
 ## 3. Bua Thong Sticky Waterfall — best free day out
 
@@ -57,7 +57,7 @@ Bua Thong is a tiered waterfall whose limestone deposits give a grippy surface, 
 - **Upsides:** unusual, free, with toilets and food stalls at the car park.
 - **Downsides:** busy on weekends, and Grab drivers often decline the return leg, so arrange transport both ways.
 
-Chet Si, the spring-fed pool at the top, is a pleasant place to cool off. Arrive by 9am to beat the crowds.
+Chet Si, the spring-fed pool at the top, is good for cooling off. Arrive by 9am to beat the crowds.
 
 ## 4. Mae Kampong — best for a cool escape
 
@@ -93,7 +93,7 @@ Lamphun, once capital of the Hariphunchai kingdom that predates Chiang Mai, make
 - **Upsides:** cheap, uncrowded and easy by public transport.
 - **Downsides:** little to do beyond the old town, and return train times are inconvenient.
 
-The temple's golden chedi is one of the most revered in northern Thailand, and the ride back is simplest by songthaew.
+The temple's golden chedi is one of the most revered in northern Thailand. With a full day, carry on south-east to Lampang, around 100 km and 1.5 to 2 hours by car from Chiang Mai, known for its horse-drawn carriages and the temple of Wat Phra That Lampang Luang.
 
 ## 7. Mon Cham — best for cool-season views
 
@@ -121,4 +121,4 @@ It opens roughly 8am to 5.30pm, and many visitors book a day tour that adds the 
 
 ## Planning your trips
 
-Weekdays and early starts make every trip easier. [Renting a scooter](/settling-in-chiang-mai/) or sharing a driver keeps costs low and fits easily within [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/). National park fees change from time to time, so confirm current prices before setting off.
+Weekdays and early starts help. [Renting a scooter](/settling-in-chiang-mai/) or sharing a driver keeps costs low and fits easily within [the cost of living in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/). National park fees change from time to time, so confirm current prices before setting off.
