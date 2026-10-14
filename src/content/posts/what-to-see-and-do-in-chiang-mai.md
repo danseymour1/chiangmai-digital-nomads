@@ -11,8 +11,8 @@ faqs:
     a: "It runs every Sunday from about 4pm until around 10pm along Ratchadamnoen Road, from Tha Phae Gate to Wat Phra Singh. A separate Saturday market takes over Wua Lai Road, just south of the Old City."
   - q: "What should you wear to temples in Chiang Mai?"
     a: "Cover your shoulders and knees, and remove your shoes before entering any temple hall. A light scarf or sarong in a day bag solves the problem if you are dressed for the heat."
-  - q: "When is the lantern festival in Chiang Mai in 2026?"
-    a: "Yi Peng and Loy Krathong are expected on 24 to 25 November 2026, with city events running across several days around those dates. Hotels fill quickly, so book well ahead."
+  - q: "When is the lantern festival in Chiang Mai?"
+    a: "Yi Peng and Loy Krathong usually fall in November, on dates set each year by the lunar calendar, with city events running across several days around them. Hotels fill quickly, so book well ahead."
   - q: "Is Doi Suthep worth visiting?"
     a: "Yes. Wat Phra That Doi Suthep is the most important temple in northern Thailand and gives the best view over the city. Go early in the morning to beat the heat and the tour groups."
   - q: "How much does a Thai cooking class cost in Chiang Mai?"
@@ -111,7 +111,7 @@ At Huay Tung Tao reservoir, bamboo huts line the water and restaurants bring foo
 
 ## Which festivals are worth planning around?
 
-Yi Peng and Loy Krathong, expected on 24 to 25 November 2026, fill the moat and the Ping River with candlelit floats. Releasing sky lanterns is restricted in the city, particularly near the airport, so the famous mass releases take place at ticketed events outside town. Songkran, the Thai New Year on 13 to 15 April, turns the Old City moat into a giant water fight. Both bring crowds and higher prices, covered in more detail in [the best time to visit Chiang Mai](/best-time-to-visit-chiang-mai/).
+Yi Peng and Loy Krathong, usually in November, fill the moat and the Ping River with candlelit floats. Releasing sky lanterns is restricted in the city, particularly near the airport, so the famous mass releases take place at ticketed events outside town. Songkran, the Thai New Year on 13 to 15 April, turns the Old City moat into a giant water fight. Both bring crowds and higher prices, covered in more detail in [the best time to visit Chiang Mai](/best-time-to-visit-chiang-mai/).
 
 ## How do remote workers fit it all in?
 

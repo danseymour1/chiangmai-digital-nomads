@@ -1,6 +1,6 @@
 ---
-title: "Cost of Living in Chiang Mai for Digital Nomads (2026)"
-description: "What it really costs to live in Chiang Mai as a remote worker in 2026: rent, bills, food, drinks, SIM, coworking, gyms and transport, all in baht."
+title: "Cost of Living in Chiang Mai for Digital Nomads"
+description: "What it really costs to live in Chiang Mai as a remote worker: rent, bills, food, drinks, SIM, coworking, gyms and transport, all in baht."
 pubDate: 2026-01-20
 updatedDate: 2026-10-14
 tags: ["cost of living"]
@@ -20,7 +20,7 @@ faqs:
     a: "Day passes start at about ฿200, and monthly memberships cost ฿3,000–6,000, with plenty of packages in between."
 ---
 
-Chiang Mai can be as cheap or as expensive as a remote worker wants it to be. A careful budget can come in under ฿25,000 a month, while ฿35,000–60,000 buys a comfortable life with a nice apartment, a decent scooter, a coworking desk and regular meals out. Here is what each part of a month costs in 2026.
+Chiang Mai can be as cheap or as expensive as a remote worker wants it to be. A careful budget can come in under ฿25,000 a month, while ฿35,000–60,000 buys a comfortable life with a nice apartment, a decent scooter, a coworking desk and regular meals out. Here is what each part of a month currently costs.
 
 ## How much does it cost to live in Chiang Mai each month?
 

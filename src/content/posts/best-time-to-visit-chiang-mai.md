@@ -38,7 +38,7 @@ Chiang Mai has three broad seasons, plus a fourth that locals and long-stayers t
 
 Every year, agricultural burning and forest fires across northern Thailand and neighbouring countries fill the Chiang Mai valley with smoke. The surrounding mountains and still, dry-season air trap it, and fine particulate matter (PM2.5) can sit at unhealthy levels for weeks. NASA notes that fire activity typically peaks in March and fades by May as the rains return.
 
-It should not be played down. In early April 2026, Chiang Mai recorded AQI readings above 200 on IQAir and ranked among the most polluted major cities in the world for several days running. Yet the same season also had an unusually clear spell in late March, helped by stricter provincial burning controls and thunderstorms. For 2026, the province announced a ban on open burning from 1 January to 31 May. Enforcement helps, but it has not ended the problem.
+It should not be played down. In a bad season, Chiang Mai can record AQI readings above 200 on IQAir and rank among the most polluted major cities in the world for several days running, though even a bad season can bring clear spells helped by burning controls and thunderstorms. The province announces seasonal bans on open burning, and enforcement helps, but it has not ended the problem.
 
 The practical advice:
 
@@ -56,11 +56,11 @@ Once the smoke clears in late April or May, the heat remains. April is the hotte
 
 For many remote workers it is underrated. Rain typically arrives in heavy afternoon or evening bursts rather than all-day drizzle, so mornings are often workable and bright. The hills around [Doi Suthep](/day-trips-from-chiang-mai/) turn green, the air is clean, and the city is noticeably calmer.
 
-The downsides are real, though. Scooter riding in a downpour is unpleasant, some roads flood briefly after storms, and in 2024 the Ping River burst its banks and flooded parts of the city, including areas near the river. If you plan a long stay from August to October, check flood history before choosing a building near the water. Choosing [the right area to live in](/best-areas-to-live-in-chiang-mai/) matters more in these months.
+The downsides are real, though. Scooter riding in a downpour is unpleasant, some roads flood briefly after storms, and the Ping River has burst its banks in recent years, flooding parts of the city near the river. If you plan a long stay from August to October, check flood history before choosing a building near the water. Choosing [the right area to live in](/best-areas-to-live-in-chiang-mai/) matters more in these months.
 
 ## How do crowds and costs change through the year?
 
-Demand follows the weather. December to February is peak season, with the highest short-stay prices and the most competition for well-located condos in Nimman. The [Yi Peng and Loy Krathong lantern festivals](/what-to-see-and-do-in-chiang-mai/), expected on 24 to 25 November in 2026, bring a sharp spike in visitors and hotel rates around those dates.
+Demand follows the weather. December to February is peak season, with the highest short-stay prices and the most competition for well-located condos in Nimman. The [Yi Peng and Loy Krathong lantern festivals](/what-to-see-and-do-in-chiang-mai/), which usually fall in November on dates set by the lunar calendar, bring a sharp spike in visitors and hotel rates around the festival.
 
 The rainy season is the quietest period, and landlords and hotels are more open to negotiation. Whatever the month, lease length is the bigger lever: month-to-month rates are always the highest, and landlords commonly take 10 to 15% off for a 12-month commitment. For a full breakdown of rent, food and coworking, see [what a month in Chiang Mai really costs](/cost-of-living-chiang-mai-digital-nomads/).
 
@@ -70,7 +70,7 @@ The rainy season is the quietest period, and landlords and hotels are more open 
 
 ## Which months suit a digital nomad best?
 
-- **November:** excellent. Cool, clear and lively, with Yi Peng late in the month.
+- **November:** excellent. Cool, clear and lively, usually with Yi Peng.
 - **December to January:** the best weather of the year, but the busiest. Book ahead.
 - **February:** good early on, with smoke often starting to build towards the end.
 - **March to April:** the hardest months. Consider leaving or prepare carefully.

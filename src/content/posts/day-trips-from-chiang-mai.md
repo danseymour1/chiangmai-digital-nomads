@@ -33,7 +33,7 @@ Wat Phra That Doi Suthep overlooks the city from the mountain west of Nimman.
 - **Upsides:** close, easy and impressive, with a city view from the terrace.
 - **Downsides:** crowded by mid-morning, and the view disappears in the burning season.
 
-The temple is reached by a naga-lined staircase of around 300 steps, or a small funicular for a modest extra fee. Arrive at sunrise for the quietest visit. Fitter visitors can hike the Monk's Trail to Wat Pha Lat, a forest temple halfway up, and songthaews continue from the temple car park to the Hmong village at Doi Pui. Since October 2025, foreigners pay ฿100 for the national park's nature areas, including the trail and Doi Pui; the temples remain fee-free by road.
+The temple is reached by a naga-lined staircase of around 300 steps, or a small funicular for a modest extra fee. Arrive at sunrise for the quietest visit. Fitter visitors can hike the Monk's Trail to Wat Pha Lat, a forest temple halfway up, and songthaews continue from the temple car park to the Hmong village at Doi Pui. Foreigners currently pay ฿100 for the national park's nature areas, including the trail and Doi Pui; the temples remain fee-free by road.
 
 ## 2. Doi Inthanon — best for mountain scenery
 
@@ -112,7 +112,7 @@ It is best from November to February, when mornings are crisp and the flowers bl
 Wat Rong Khun, the ornate white temple just south of Chiang Rai, is the furthest trip worth doing in a day.
 
 - **Getting there:** roughly 3–3.5 hours each way by bus from Arcade Bus Terminal 3, then a short local ride.
-- **Cost:** ฿200 entry for foreigners since January 2026; bus fares around ฿260–400 each way depending on class.
+- **Cost:** currently ฿200 entry for foreigners; bus fares around ฿260–400 each way depending on class.
 - **Who it suits:** those happy to trade six hours of travel for a striking sight.
 - **Upsides:** unlike anything else in the region.
 - **Downsides:** very little time on site unless you join a tour or stay the night.

@@ -1,19 +1,12 @@
 ---
-import { site } from "../site.config.ts";
 interface Props {
   title: string;
   description: string;
   slug: string;
-  pubDate: Date;
+  pubDate?: Date;
   tags?: string[];
 }
-const { title, description, slug, pubDate, tags = [] } = Astro.props;
-const dateStr = pubDate.toLocaleDateString(site.language, {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
-const isoDate = pubDate.toISOString();
+const { title, description, slug, tags = [] } = Astro.props;
 ---
 
 <article class="post-card">
@@ -21,7 +14,6 @@ const isoDate = pubDate.toISOString();
     <h3>{title}</h3>
     <p class="post-card-desc">{description}</p>
     <p class="post-card-meta">
-      <time datetime={isoDate}>{dateStr}</time>
       {tags.length > 0 && <span class="post-card-tag">{tags[0]}</span>}
       <span class="post-card-read">Read guide</span>
     </p>

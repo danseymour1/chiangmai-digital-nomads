@@ -1,36 +1,35 @@
 ---
 title: "What Visa Options Are There for Digital Nomads in Chiang Mai?"
-description: "The realistic visa routes for remote workers in Chiang Mai in 2026: the new 30-day exemption, the DTV, tourist visas, LTR, Thailand Privilege and ED visas."
+description: "The realistic visa routes for remote workers in Chiang Mai: the current 30-day exemption, the DTV, tourist visas, LTR, Thailand Privilege and ED visas."
 pubDate: 2026-10-14
 tags: ["visas", "planning"]
 image: "/images/chang-phueak-gate-north-gate.jpg"
 imageAlt: "Chang Phueak Gate, the north gate of Chiang Mai's Old City, lit up at dusk with elephant decorations"
-keyAnswer: "Most digital nomads planning more than a few weeks in Chiang Mai use the Destination Thailand Visa (DTV), which is valid for five years and allows stays of up to 180 days per entry, extendable once by a further 180 days. Short visits can be made on visa exemption, which for UK, US and most EU passports was cut from 60 to 30 days on 15 September 2026. None of these visas allows work for Thai clients or companies."
+keyAnswer: "Most digital nomads planning more than a few weeks in Chiang Mai use the Destination Thailand Visa (DTV), which is valid for five years and allows stays of up to 180 days per entry, extendable once by a further 180 days. Short visits can be made on visa exemption, which for UK, US and most EU passports is currently 30 days, though this changes regularly. None of these visas allows work for Thai clients or companies."
 faqs:
   - q: "How long can UK and US citizens stay in Thailand without a visa?"
-    a: "Since 15 September 2026, UK, US and most EU passport holders can stay for up to 30 days on visa exemption, which can be extended once by 30 days at an immigration office for ฿1,900. The exemption is intended for tourism, and travellers who arrived on or before 14 September keep the 60 days they were given."
+    a: "UK, US and most EU passport holders can currently stay for up to 30 days on visa exemption, which can be extended once by 30 days at an immigration office for ฿1,900. The exemption is intended for tourism, and the allowance changes regularly, so check before travelling."
   - q: "How much money do you need for the Thailand DTV?"
     a: "Applicants must show at least ฿500,000 in funds, usually through recent official bank statements. They also need evidence of remote work for employers or clients outside Thailand, or of a qualifying activity such as a Muay Thai or Thai cookery course."
   - q: "Can you apply for the DTV from inside Thailand?"
-    a: "No. The DTV is applied for through the Thai e-Visa website and processed by a Thai embassy or consulate abroad. Since 31 August 2026 applicants must also show proof of permanent residence in the country they apply from and a criminal record certificate."
+    a: "No. The DTV is applied for through the Thai e-Visa website and processed by a Thai embassy or consulate abroad. Applicants currently also need proof of permanent residence in the country they apply from and a criminal record certificate."
   - q: "Can digital nomads work for Thai companies on a DTV?"
     a: "No. The DTV, exemption, tourist visa and Thailand Privilege do not allow work for Thai employers or Thai clients. That requires a work permit and an appropriate non-immigrant visa."
   - q: "Do you need to do 90-day reporting on a DTV?"
     a: "Yes, if you stay in Thailand for more than 90 days in a row. The report is free and can be filed online, by post or in person at Chiang Mai Immigration, and leaving the country resets the count."
 ---
 
-For most remote workers who want to spend months rather than weeks in Chiang Mai, the answer is the **Destination Thailand Visa (DTV)**. It is valid for five years, gives up to 180 days per entry and can be extended once in Thailand. Shorter trips can still be made on visa exemption, but since 15 September 2026 that allows only 30 days for UK, US and most EU passports. The long-term alternatives (LTR, Thailand Privilege and education visas) suit narrower groups of people.
+For most remote workers who want to spend months rather than weeks in Chiang Mai, the answer is the **Destination Thailand Visa (DTV)**. It is valid for five years, gives up to 180 days per entry and can be extended once in Thailand. Shorter trips can still be made on visa exemption, but that currently allows only 30 days for UK, US and most EU passports. The long-term alternatives (LTR, Thailand Privilege and education visas) suit narrower groups of people.
 
 Thai visa rules change often, so before booking, check the current requirements on the official Thai e-Visa website (thaievisa.go.th) and with your nearest Thai embassy or consulate.
 
 ## How long can you stay in Thailand without a visa?
 
-From 15 September 2026, nationals of 60 countries and territories, including the UK, the US, Canada, Australia and most EU states, can enter Thailand without a visa for up to **30 days**. This replaced the 60-day exemption introduced in July 2024.
+Nationals of around 60 countries and territories, including the UK, the US, Canada, Australia and most EU states, can currently enter Thailand without a visa for up to **30 days**. The allowance has changed several times in recent years, and was previously 60 days, so always check the current rule before booking.
 
 - **Extension:** once, by 30 days, at an immigration office for ฿1,900, at the officer's discretion.
 - **Land arrivals:** limited to two exemption entries a year.
 - **Purpose:** the exemption is framed around tourism, not extended remote work.
-- **Transition:** anyone stamped in on or before 14 September 2026 keeps the 60 days they were given.
 
 All visitors also need to complete the online Thailand Digital Arrival Card (TDAC) before arriving.
 
@@ -47,9 +46,9 @@ The DTV launched in July 2024 for remote workers, freelancers and people taking 
 
 Applications are made online through the Thai e-Visa website and assigned to the embassy or consulate covering the applicant's location, and cannot be made from inside Thailand. Approval can be quick, sometimes within a week, though times vary.
 
-## What changed for the DTV in August 2026?
+## What documents does the DTV currently require?
 
-For applications submitted from 31 August 2026, the Thai Department of Consular Affairs replaced the old proof of current location with **proof of permanent residence**, and added a **criminal record certificate**. In practice, this means applying from your home country or the country where you hold residence, rather than during a short trip to a neighbouring country. Certificate requirements differ between embassies, so check your own embassy's checklist.
+Applicants currently need **proof of permanent residence**, rather than just proof of their current location, and a **criminal record certificate**. In practice, this means applying from your home country or the country where you hold residence, rather than during a short trip to a neighbouring country. Certificate requirements differ between embassies, so check your own embassy's checklist.
 
 Immigration officers in Chiang Mai have reportedly asked some DTV holders for updated bank statements, proof of ongoing remote work and a rental contract when they apply for the 180-day extension. Extensions are discretionary, not automatic.
 
@@ -85,7 +84,7 @@ Extensions of stay are handled by Chiang Mai Immigration. In recent years, exten
 
 ## Does staying 180 days make you a Thai tax resident?
 
-Anyone in Thailand for 180 days or more in a calendar year is generally treated as a Thai tax resident, whatever their visa. Since 2024, foreign income brought into Thailand by tax residents can be taxable. This is a general point only, not tax advice, so long-stayers should take advice from a qualified tax adviser. Budgeting for this alongside rent and living costs is part of [planning a longer stay in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/).
+Anyone in Thailand for 180 days or more in a calendar year is generally treated as a Thai tax resident, whatever their visa. Under the current rules, foreign income brought into Thailand by tax residents can be taxable. This is a general point only, not tax advice, so long-stayers should take advice from a qualified tax adviser. Budgeting for this alongside rent and living costs is part of [planning a longer stay in Chiang Mai](/cost-of-living-chiang-mai-digital-nomads/).
 
 ## Can you work for Thai clients on any of these visas?
 

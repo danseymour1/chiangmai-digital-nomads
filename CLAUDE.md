@@ -24,6 +24,14 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - NEVER invent specific facts (prices, visa rules, hours, stats). If unsure, research the current figure or give a clearly-flagged range for me to verify. Never state a guess as fact.
 - Visa/legal details: add a short line telling readers to check official sources.
 
+## No dates in guides
+- In the BODY TEXT of guides/blog posts (including keyAnswer, FAQ answers and descriptions), never tie time-sensitive facts to a specific calendar date or year. Phrase them as current and changeable instead: not "cut from 60 to 30 days on 15 September 2026" but "currently 30 days, though this changes regularly"; not "the cost as of October 2025 is..." but "the current cost is...". Same for exchange rates: say "current", never date-stamp them.
+- Months and seasons are fine where the topic needs them (e.g. "the burning season is roughly March to April"). The rule is about specific dates and year-stamps, not months.
+- Exceptions: historical events can keep their date (e.g. "the DTV launched in July 2024"); fixed annual dates such as national holidays (e.g. Songkran on 13 to 15 April) and recurring seasonal policies stated without a year (e.g. "monthly rates from 1 March to 30 September") are fine.
+- Never put a year in a post title.
+- Dates ARE allowed in community stories (contributors may date their own experiences).
+- Keep the pubDate field in post frontmatter: it is metadata for ordering, not body content. Guide pages do not display dates to readers; community stories do.
+
 ## Prices
 - Thai baht only, shown with the ฿ symbol, e.g. ฿12,000–22,000. Never write "THB", and do not add other currencies.
 
