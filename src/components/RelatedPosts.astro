@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import PostCard from "./PostCard.astro";
+
+interface Props {
+  currentId: string;
+  tags?: string[];
+}
+const { currentId, tags = [] } = Astro.props;
+
+/* Up to 3 other posts: those sharing the most tags first, then
+   topped up with the most recent. Hidden if fewer than 2. */
+const MAX = 3;
+const MIN = 2;
+
+const others = (
+  await getCollection("posts", ({ id, data }) => !data.draft && id !== currentId)
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const shared = (post: (typeof others)[number]) =>
+  post.data.tags.filter((t) => tags.includes(t)).length;
+
+const tagged = others
+  .filter((p) => shared(p) > 0)
+  .sort((a, b) => shared(b) - shared(a));
+const recent = others.filter((p) => shared(p) === 0);
+const related = [...tagged, ...recent].slice(0, MAX);
+---
+
+{related.length >= MIN && (
+  <section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">You might also like</h2>
+    <div class="related-list">
+      {related.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          slug={post.id}
+          pubDate={post.data.pubDate}
+          tags={post.data.tags}
+        />
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related {
+    margin-top: var(--space-section);
+  }
+  .related h2 {
+    margin-bottom: 0.6rem;
+  }
+  .related-list {
+    border-bottom: 1px solid var(--mist);
+  }
+</style>

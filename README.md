@@ -13,7 +13,7 @@ a command", type it into the terminal — or just ask Claude Code to do it.
 
 - Home, About, Guides (blog), Contact and Community pages — ready to go.
 - Posts as simple text files — one file per post, no database.
-- SEO built in — titles, descriptions, sitemap, RSS feed, social-share tags and
+- SEO built in — titles, descriptions, sitemap, social-share tags and
   Google structured data, all automatic.
 - AEO built in (being quotable by Google answer boxes and AI tools) — a "short
   answer" box and an FAQ section on posts that generate the right structured data.

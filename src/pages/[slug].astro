@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Faq from "../components/Faq.astro";
+import RelatedPosts from "../components/RelatedPosts.astro";
 import { site } from "../site.config.ts";
 
 export async function getStaticPaths() {
@@ -113,6 +114,8 @@ const breadcrumbSchema = {
     </div>
 
     <Faq items={d.faqs} />
+
+    <RelatedPosts currentId={post.id} tags={d.tags} />
 
     <footer class="post-foot">
       <a href="/blog/" class="btn btn--ghost">← More guides</a>
