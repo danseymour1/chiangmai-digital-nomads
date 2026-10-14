@@ -1,13 +1,22 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PostCard from "../components/PostCard.astro";
 import Card from "../components/Card.astro";
 import { site } from "../site.config.ts";
 
-const posts = (await getCollection("posts", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 4);
+// Guides shown on the home page: the 3 newest, unless you list guide
+// file names (without .md) here to choose them yourself, e.g.
+// ["best-areas-to-live-in-chiang-mai", "cost-of-living-chiang-mai-digital-nomads"]
+const featuredGuides: string[] = [];
+
+const allPosts = (await getCollection("posts", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const posts = featuredGuides.length
+  ? featuredGuides
+      .map((slug) => allPosts.find((post) => post.id === slug))
+      .filter((post) => post !== undefined)
+  : allPosts.slice(0, 3);
 
 const stories = (await getCollection("community", ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -34,28 +43,33 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
   </section>
 
   <section class="wrap home-section">
-    <div class="section-head">
+    <div class="section-head section-head--spaced">
       <h2>Latest guides</h2>
       <a href="/blog" class="section-link">All guides</a>
     </div>
-    <div class="post-list">
-      {posts.length === 0 ? (
-        <p class="empty">
-          No guides published yet. Add your first one in
-          <code>src/content/posts/</code>.
+    {posts.length === 0 ? (
+      <p class="empty">
+        No guides published yet. Add your first one in
+        <code>src/content/posts/</code>.
+      </p>
+    ) : (
+      <>
+        <ul class="card-grid">
+          {posts.map((post) => (
+            <li>
+              <Card
+                href={`/${post.id}/`}
+                title={post.data.title}
+                description={post.data.description}
+              />
+            </li>
+          ))}
+        </ul>
+        <p class="see-more">
+          <a href="/blog/" class="btn btn--ghost">See more</a>
         </p>
-      ) : (
-        posts.map((post) => (
-          <PostCard
-            title={post.data.title}
-            description={post.data.description}
-            slug={post.id}
-            pubDate={post.data.pubDate}
-            tags={post.data.tags}
-          />
-        ))
-      )}
-    </div>
+      </>
+    )}
   </section>
 
   <section class="community-teaser">
@@ -168,8 +182,9 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
     font-weight: 600;
     white-space: nowrap;
   }
-  .post-list {
-    border-bottom: 1px solid var(--mist);
+  .see-more {
+    margin: 2rem 0 0;
+    text-align: center;
   }
   .empty {
     padding: 2rem 0;
