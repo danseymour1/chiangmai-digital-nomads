@@ -115,12 +115,12 @@ const breadcrumbSchema = {
 
     <Faq items={d.faqs} />
 
-    <RelatedPosts currentId={post.id} tags={d.tags} />
-
     <footer class="post-foot">
       <a href="/blog/" class="btn btn--ghost">← More guides</a>
     </footer>
   </article>
+
+  <RelatedPosts currentId={post.id} tags={d.tags} />
 </BaseLayout>
 
 <style>
