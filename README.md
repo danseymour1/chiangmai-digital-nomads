@@ -150,8 +150,12 @@ draft: false
 ---
 ```
 
-The filter tags are the `communityTags` list in `src/site.config.ts` — edit it
-there. Each story's tags must come from that list (the build tells you if not).
+The tag filter on the Community page is built automatically from the tags used
+on published stories, so a new tag appears as soon as a story uses it. Spell tags
+consistently ("Food", not sometimes "food") or they show as separate filters.
+
+To show a thank-you message after someone submits, set the Tally form's
+"Redirect on completion" to `https://chiangmaidigitalnomads.com/community/?submitted=1`.
 
 If you delete the very last story, clear Astro's cache before building
 (`rm -rf node_modules/.astro .astro`), otherwise the old story can linger.

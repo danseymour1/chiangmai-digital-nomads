@@ -1,6 +1,5 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { site } from "./site.config.ts";
 
 /* -------------------------------------------------------------
    POSTS COLLECTION
@@ -32,15 +31,8 @@ const posts = defineCollection({
    Reader-submitted stories, one Markdown file each in
    src/content/community/. Kept separate from the guides: they
    live at /community/<file-name>/ and never appear in /blog.
-   Tags must come from communityTags in src/site.config.ts.
+   The Community page builds its tag filter from the tags used here.
    ------------------------------------------------------------- */
-const communityTag = z.string().refine(
-  (t) => (site.communityTags as string[]).includes(t),
-  (t) => ({
-    message: `"${t}" isn't in communityTags in src/site.config.ts (${site.communityTags.join(", ")})`,
-  })
-);
-
 const community = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/community" }),
   schema: z.object({
@@ -48,7 +40,7 @@ const community = defineCollection({
     author: z.string(),
     pubDate: z.coerce.date(),
     description: z.string(),
-    tags: z.array(communityTag).default([]),
+    tags: z.array(z.string().trim()).default([]),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     draft: z.boolean().default(false),

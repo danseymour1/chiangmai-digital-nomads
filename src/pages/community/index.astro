@@ -8,10 +8,33 @@ const stories = (
   await getCollection("community", ({ data }) => !data.draft)
 ).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+// Tags actually used by published stories, most used first.
+const tagCounts = new Map<string, number>();
+for (const story of stories) {
+  for (const tag of new Set(story.data.tags)) {
+    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  }
+}
+const tags = [...tagCounts.keys()].sort(
+  (a, b) => tagCounts.get(b)! - tagCounts.get(a)! || a.localeCompare(b)
+);
+
 const description = `Real stories from people living and working remotely in ${site.place}: food, coworking, day trips and life as a nomad. Share yours.`;
 ---
 
 <BaseLayout title="Community" description={description} path="/community">
+  <div class="wrap">
+    <div class="thanks" role="status" data-thanks hidden>
+      <p>
+        Thank you for your submission. Your story will appear here shortly,
+        once it has been checked by a human.
+      </p>
+      <button type="button" class="thanks-close" aria-label="Dismiss" data-thanks-close>
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+  </div>
+
   <div class="wrap page-head">
     <h1>Share your {site.place} story</h1>
     <p class="lead">
@@ -38,16 +61,18 @@ const description = `Real stories from people living and working remotely in ${s
       </div>
     ) : (
       <div data-story-filter>
-        <div class="tags" role="group" aria-label="Filter stories by tag">
-          <button type="button" class="tag" data-tag="" aria-pressed="true">
-            All
-          </button>
-          {site.communityTags.map((tag) => (
-            <button type="button" class="tag" data-tag={tag} aria-pressed="false">
-              {tag}
+        {tags.length > 0 && (
+          <div class="tags" role="group" aria-label="Filter stories by tag">
+            <button type="button" class="tag" data-tag="" aria-pressed="true">
+              All
             </button>
-          ))}
-        </div>
+            {tags.map((tag) => (
+              <button type="button" class="tag" data-tag={tag} aria-pressed="false">
+                {tag}
+              </button>
+            ))}
+          </div>
+        )}
 
         <p class="sr-only" aria-live="polite" data-status></p>
 
@@ -66,27 +91,32 @@ const description = `Real stories from people living and working remotely in ${s
             </li>
           ))}
         </ul>
-
-        <div class="empty" data-no-match hidden>
-          <p>
-            No stories tagged <strong data-no-match-tag></strong> yet.
-          </p>
-          <button type="button" class="btn btn--ghost" data-show-all>
-            Show all stories
-          </button>
-        </div>
       </div>
     )}
   </section>
 </BaseLayout>
 
 <script>
+  // Thank-you banner: shown only when the URL has ?submitted=1 (the
+  // Tally form redirects here after a submission).
+  const thanks = document.querySelector<HTMLElement>("[data-thanks]");
+  const params = new URLSearchParams(location.search);
+  if (thanks && params.get("submitted") === "1") {
+    thanks.hidden = false;
+    thanks.querySelector("[data-thanks-close]")?.addEventListener("click", () => {
+      thanks.hidden = true;
+      // Drop the parameter so a refresh doesn't bring the banner back.
+      params.delete("submitted");
+      const query = params.toString();
+      history.replaceState(null, "", location.pathname + (query ? `?${query}` : "") + location.hash);
+    });
+  }
+
+  // Tag filter.
   const root = document.querySelector<HTMLElement>("[data-story-filter]");
   if (root) {
     const buttons = root.querySelectorAll<HTMLButtonElement>("button[data-tag]");
     const items = root.querySelectorAll<HTMLElement>("li[data-tags]");
-    const noMatch = root.querySelector<HTMLElement>("[data-no-match]")!;
-    const noMatchTag = root.querySelector<HTMLElement>("[data-no-match-tag]")!;
     const status = root.querySelector<HTMLElement>("[data-status]")!;
 
     const filter = (tag: string) => {
@@ -100,8 +130,6 @@ const description = `Real stories from people living and working remotely in ${s
       buttons.forEach((b) =>
         b.setAttribute("aria-pressed", String(b.dataset.tag === tag))
       );
-      noMatch.hidden = shown > 0;
-      noMatchTag.textContent = tag;
       const noun = shown === 1 ? "story" : "stories";
       status.textContent = tag
         ? `Showing ${shown} ${noun} tagged ${tag}`
@@ -111,13 +139,53 @@ const description = `Real stories from people living and working remotely in ${s
     buttons.forEach((b) =>
       b.addEventListener("click", () => filter(b.dataset.tag ?? ""))
     );
-    root
-      .querySelector("[data-show-all]")
-      ?.addEventListener("click", () => filter(""));
   }
 </script>
 
 <style>
+  .thanks {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 1rem 1rem 1rem 1.5rem;
+    background: color-mix(in srgb, var(--accent) 12%, var(--paper-raised));
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--mist));
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius);
+  }
+  .thanks[hidden] {
+    display: none;
+  }
+  .thanks p {
+    flex: 1;
+    margin: 0;
+    padding-top: 0.15rem;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .thanks-close {
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--ink-soft);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .thanks-close:hover {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    color: var(--ink);
+  }
+  .thanks-close:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
   .page-head {
     padding-top: clamp(2.5rem, 6vw, 4.5rem);
   }
@@ -180,14 +248,8 @@ const description = `Real stories from people living and working remotely in ${s
     padding: 1.5rem 1.7rem;
     max-width: 40rem;
   }
-  .empty[hidden] {
-    display: none;
-  }
   .empty p {
     margin-top: 0;
     color: var(--ink-soft);
-  }
-  .empty strong {
-    color: var(--ink);
   }
 </style>

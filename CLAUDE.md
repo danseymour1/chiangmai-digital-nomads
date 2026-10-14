@@ -43,7 +43,7 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 ## Community stories
 - Reader-submitted stories are NOT guides. Each is one file in src/content/community/ (not src/content/posts/), live at /community/<filename>/ and in the Community page grid only.
 - Frontmatter: title, author (the reader's name/credit), pubDate, description, tags, optional image/imageAlt, draft.
-- tags must come from communityTags in src/site.config.ts (Food, Drink, Where to work, Day trips, My story); the build fails otherwise. Edit that list to add tags.
+- The Community page's tag filter is built from the tags used on published stories. Reuse existing tags with the exact same spelling and capitalisation (check the other files in src/content/community/) so they group under one filter; only add a new tag when none fits.
 - Keep the reader's own first-person voice, lightly tidied (British English, no em-dashes in body text). Don't add facts they didn't give.
 - src/content/community/example-story.md is a placeholder to delete once real stories exist. If deleting the last story, run rm -rf node_modules/.astro .astro before building, or Astro keeps serving the cached entry.
 
