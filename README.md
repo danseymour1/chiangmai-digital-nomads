@@ -121,8 +121,9 @@ settings live).
 
 ## Turn the forms on
 
-**Contact** — make a free form at [formspree.io](https://formspree.io), paste
-its endpoint into `contactEndpoint` in `src/site.config.ts`.
+**Contact** — make a free form at [tally.so](https://tally.so), paste its share
+link into `contactFormLink` in `src/site.config.ts`. It appears inline on the
+Contact page. Leave it blank and the page shows your email address instead.
 
 **Community** — make a free form at [tally.so](https://tally.so) (allows photo
 uploads), set it to email you for review, paste its share link into

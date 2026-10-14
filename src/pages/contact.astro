@@ -2,7 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../site.config.ts";
 
-const endpoint = site.forms.contactEndpoint;
+const link = site.forms.contactFormLink;
+
+const isTally = link.includes("tally.so");
+const tallyEmbed = isTally
+  ? link.replace("tally.so/r/", "tally.so/embed/") +
+    (link.includes("?") ? "&" : "?") +
+    "alignLeft=1&transparentBackground=1&dynamicHeight=1"
+  : "";
+
 const description = `Get in touch with ${site.name} — questions, corrections, or just to say hello.`;
 ---
 
@@ -14,45 +22,30 @@ const description = `Get in touch with ${site.name} — questions, corrections, 
       Send a message and we'll get back to you.
     </p>
 
-    {endpoint ? (
-      <form class="form" action={endpoint} method="POST">
-        <div class="field">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required />
+    {link ? (
+      isTally ? (
+        <div class="embed">
+          <iframe
+            data-tally-src={tallyEmbed}
+            src={tallyEmbed}
+            width="100%"
+            height="600"
+            frameborder="0"
+            title="Contact form"
+            loading="lazy"
+          ></iframe>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send message</button>
-      </form>
+      ) : (
+        <p class="cta">
+          <a href={link} class="btn" target="_blank" rel="noopener">
+            Open the contact form
+          </a>
+        </p>
+      )
     ) : (
-      <div class="setup-note">
-        <h2>One quick setup step</h2>
-        <p>
-          The contact form isn't connected yet. To switch it on:
-        </p>
-        <ol>
-          <li>
-            Make a free account at
-            <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>
-            and create a new form.
-          </li>
-          <li>Copy the form endpoint it gives you (looks like <code>https://formspree.io/f/abcdwxyz</code>).</li>
-          <li>
-            Paste it into <code>contactEndpoint</code> in
-            <code>src/site.config.ts</code>, then rebuild.
-          </li>
-        </ol>
-        <p>
-          Until then, people can email you directly at
-          <a href={`mailto:${site.email}`}>{site.email}</a>.
-        </p>
-      </div>
+      <p class="email">
+        Email <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
     )}
   </div>
 </BaseLayout>
@@ -68,61 +61,21 @@ const description = `Get in touch with ${site.name} — questions, corrections, 
     max-width: 52ch;
     margin-bottom: 2rem;
   }
-  .form {
-    display: grid;
-    gap: 1.2rem;
-    max-width: 34rem;
-  }
-  .field {
-    display: grid;
-    gap: 0.4rem;
-  }
-  label {
-    font-weight: 600;
-    font-size: 0.98rem;
-  }
-  input,
-  textarea {
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.7rem 0.8rem;
-    border: 1.5px solid var(--mist-deep);
-    border-radius: var(--radius);
-    background: var(--paper-raised);
-    color: var(--ink);
-    width: 100%;
-  }
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border-color: var(--brand);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 18%, transparent);
-  }
-  .form .btn {
-    justify-self: start;
-  }
-  .setup-note {
-    background: var(--paper-raised);
+  .embed {
     border: 1px solid var(--mist);
     border-radius: var(--radius);
-    padding: 1.5rem 1.7rem;
-    max-width: 40rem;
+    padding: 0.5rem;
+    background: var(--paper-raised);
   }
-  .setup-note h2 {
-    font-size: 1.2rem;
-    margin-top: 0;
+  .embed iframe {
+    display: block;
+    width: 100%;
+    border: none;
   }
-  .setup-note ol {
-    padding-left: 1.2rem;
-    color: var(--ink-soft);
+  .cta {
+    margin-top: 1rem;
   }
-  .setup-note li {
-    margin-bottom: 0.5rem;
-  }
-  .setup-note code {
-    background: var(--paper);
-    padding: 0.1rem 0.35rem;
-    border-radius: 4px;
-    font-size: 0.9em;
+  .email {
+    font-size: 1.15rem;
   }
 </style>

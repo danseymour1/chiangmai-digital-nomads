@@ -52,8 +52,11 @@ export const site = {
   /* ---- Forms ---------------------------------------------- */
   // Paste the link/endpoint you get from your form service.
   forms: {
-    // Formspree endpoint for the Contact page, e.g.
-    // "https://formspree.io/f/abcdwxyz"
+    // Tally link for the Contact page, e.g. "https://tally.so/r/abc123".
+    // Leave blank and the page shows the email address instead.
+    contactFormLink: "https://tally.so/r/A7oZWk",
+
+    // No longer used (the Contact page now embeds Tally above).
     contactEndpoint: "",
 
     // Tally link for community story submissions (supports photo
