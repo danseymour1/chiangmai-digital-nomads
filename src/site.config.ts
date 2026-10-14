@@ -25,11 +25,11 @@ export const site = {
 
   // The big home-page headline. Leave blank to auto-use
   // "Live and work remotely in {place}."
-  heroHeadline: "Chiang Mai, decoded.",
+  heroHeadline: "Thailand's digital nomad capital, without the guesswork.",
 
   // Longer description for the home page hero subheading.
   heroSubheading:
-    "Cost of living, the best cafés to work from, visas, community and real stories — written for remote workers choosing Chiang Mai, the heart of northern Thailand.",
+    "Cost of living, the best cafés to work from, visas, community and real stories, written for remote workers choosing Chiang Mai, the heart of northern Thailand.",
 
   // The language your content is written in.
   language: "en-GB",
