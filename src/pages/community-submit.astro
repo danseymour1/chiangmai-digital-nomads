@@ -11,7 +11,7 @@ const tallyEmbed = isTally
     "alignLeft=1&transparentBackground=1&dynamicHeight=1"
   : "";
 
-const description = `Submit your story of living or working remotely in ${site.place}. Fill in the form, add a few photos, and we'll turn it into a community story.`;
+const description = `Submit your story of living or working remotely in ${site.place}. Fill in the form, add a few photos, and it will be turned into a community story.`;
 ---
 
 <BaseLayout
@@ -23,8 +23,8 @@ const description = `Submit your story of living or working remotely in ${site.p
     <p class="back"><a href="/community/">← Community stories</a></p>
     <h1>Submit your story</h1>
     <p class="lead">
-      Tell us what living or working in {site.place} is really like for
-      you. Add a few photos and we'll shape it into a community story
+      Share what living or working in {site.place} is really like for
+      you. Add a few photos and it will be shaped into a community story
       that other nomads can find and learn from. You get the credit.
     </p>
 
@@ -36,14 +36,14 @@ const description = `Submit your story of living or working remotely in ${site.p
           details, and up to a handful of photos.
         </li>
         <li>
-          <strong>We check it over.</strong> Every submission is read
-          by a human first — so nothing spammy or unpleasant ever goes
+          <strong>It gets checked.</strong> Every submission is read
+          by a human first, so nothing spammy or unpleasant ever goes
           live. This is the bit that keeps the site good.
         </li>
         <li>
-          <strong>It goes live.</strong> We tidy it up, add it to the
-          <a href="/community/">community stories</a>, and credit you.
-          We'll email you the link.
+          <strong>It goes live.</strong> It is tidied up, added to the
+          <a href="/community/">community stories</a> and credited to
+          you, and the link is emailed to you.
         </li>
       </ol>
     </div>
@@ -100,7 +100,7 @@ const description = `Submit your story of living or working remotely in ${site.p
         </p>
         <ol>
           <li>Make a free Tally account and build a form (name, email, their story, and a file-upload field for photos).</li>
-          <li>Set the form so submissions come to your email — leave it as "manual review", not auto-publish.</li>
+          <li>Set the form so submissions come to your email, and leave it as "manual review", not auto-publish.</li>
           <li>
             Copy the form's share link (like <code>https://tally.so/r/abc123</code>)
             and paste it into <code>communityFormLink</code> in

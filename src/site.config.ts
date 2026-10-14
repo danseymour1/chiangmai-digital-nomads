@@ -21,7 +21,7 @@ export const site = {
   // One honest line describing the site. Shows under the logo,
   // in Google results, and when the site is shared on socials.
   tagline:
-    "An honest, up-to-date guide to living and working remotely in Chiang Mai, Thailand — plus stories from the people who do it.",
+    "An honest, up-to-date guide to living and working remotely in Chiang Mai, Thailand, plus stories from the people who do it.",
 
   // The big home-page headline. Leave blank to auto-use
   // "Live and work remotely in {place}."

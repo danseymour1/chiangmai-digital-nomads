@@ -11,7 +11,7 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 
 ## Voice
 - Third-person, giving clear direct advice. No "we".
-- Em-dashes only in headings, e.g. "## 1. Nimman — best for nomads". Never in body text, lists, frontmatter or FAQs (use commas, brackets or full stops instead).
+- Em-dashes are fine in headings (e.g. "## 1. Nimman — best for nomads") and in list items (e.g. "- **Fast wifi** — most cafés have fibre"). Never in running sentences: body paragraphs, frontmatter descriptions, keyAnswer or FAQ answers (use commas, colons, brackets or full stops instead).
 - Formal but friendly: professional, clear and warm, not chatty. No emojis, no diary asides, no self-deprecation. A knowledgeable local writing a proper guide.
 - British English throughout.
 - Grounded and credible, written as if from direct experience of Chiang Mai.
