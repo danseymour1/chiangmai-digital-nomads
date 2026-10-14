@@ -3,6 +3,8 @@ title: "The Best Cafés to Work From in Chiang Mai"
 description: "Where to actually get work done in Chiang Mai — cafés with fast wifi, plug sockets, good coffee and space to sit for hours, chosen by remote workers."
 pubDate: 2026-01-26
 tags: ["working"]
+image: "/images/yellow-coworking-desk.jpg"
+imageAlt: "Laptop, iced coffee and a pot plant on a shared desk at Yellow Coworking in Chiang Mai"
 keyAnswer: "The best work cafés in Chiang Mai cluster around the Nimmanhaemin area, with more spread through the Old City and Santitham. Look for fast fibre wifi, plenty of plug sockets and a relaxed attitude to laptop workers. Go early to claim a socket at the popular spots, and keep a mobile data SIM topped up as a backup for calls."
 faqs:
   - q: "Is Chiang Mai good for working from cafés?"

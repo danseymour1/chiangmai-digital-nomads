@@ -3,6 +3,8 @@ title: "Best Areas to Live in Chiang Mai for Digital Nomads"
 description: "Where to base yourself in Chiang Mai as a remote worker — Nimman, Santitham, the Old City, Suthep, the riverside and Hang Dong compared, with rents and who each suits."
 pubDate: 2026-10-13
 tags: ["where to live"]
+image: "/images/chiang-mai-balcony-sunset.jpg"
+imageAlt: "Sunset over the low-rise rooftops of Chiang Mai, seen from a condo balcony"
 keyAnswer: "Nimmanhaemin (Nimman) is the best base for most digital nomads, with the city's densest cluster of work cafés and coworking spaces within walking distance. Santitham, next door, offers similar access for less rent, and the Old City suits those who want temples and walkable lanes. A one-bedroom condo typically costs 12,000–22,000 THB (≈ £270–£495 · $355–$655 · €315–€580) a month in Nimman and 6,000–14,000 THB (≈ £135–£315 · $180–$415 · €160–€370) in Santitham."
 faqs:
   - q: "How much deposit do you need to rent in Chiang Mai?"
@@ -15,7 +17,7 @@ faqs:
     a: "They can be. Some condo buildings charge electricity and water above the standard government rate, which adds up quickly when the air conditioning is on in the hot season. Ask for the per-unit rate before signing."
 ---
 
-<!-- IMAGES TO ADD: cover of a quiet Nimman side soi or a Santitham street at dusk; optional inline of the Old City moat or a condo balcony view towards Doi Suthep -->
+<!-- IMAGES TO ADD (optional inline): a quiet Nimman side soi, a Santitham street at dusk, or the Old City moat -->
 
 <!-- VERIFY BEFORE PUBLISHING (Dan): rent ranges are blended from 2026 listing sites and relocation guides, which disagree with one another — sense-check against current Hipflat / FazWaz / PropertyScout listings. Coworking spaces taken from a July 2026 local guide; confirm they are still open. -->
 

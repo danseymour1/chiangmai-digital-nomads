@@ -3,6 +3,8 @@ title: "Best Time to Visit Chiang Mai as a Digital Nomad"
 description: "When to base yourself in Chiang Mai as a remote worker: the cool, hot, smoky and rainy seasons compared, with crowds, costs and the best months to go."
 pubDate: 2026-10-13
 tags: ["planning"]
+image: "/images/ang-kaew-reservoir-doi-suthep.jpg"
+imageAlt: "Ang Kaew reservoir in Chiang Mai, with its fountain and the green Doi Suthep hills behind on a clear day"
 keyAnswer: "The best time for a digital nomad to be in Chiang Mai is November to mid-February, when the weather is cool and dry and the air is generally clean. Late February to April is the burning season, when smoke from agricultural and forest fires often pushes air quality to unhealthy levels, so many remote workers leave. The rainy season from June to October is the quietest and best-value time, with green hills and short afternoon downpours."
 faqs:
   - q: "When is the burning season in Chiang Mai?"
@@ -15,7 +17,7 @@ faqs:
     a: "April is the hottest month, with average daytime highs of around 36°C and some days going well beyond that. A condo with good air conditioning matters far more in March to May than at any other time of year."
 ---
 
-<!-- IMAGES TO ADD: cover of Doi Suthep seen from the city on a clear cool-season morning; optional inline of a hazy burning-season skyline, or the rice fields in the green season -->
+<!-- IMAGES TO ADD (optional inline): a hazy burning-season skyline, or the rice fields in the green season -->
 
 <!-- VERIFY BEFORE PUBLISHING (Dan): Yi Peng 2026 dates (24–25 Nov) come from travel guides citing the TAT schedule, confirm closer to the time. Climate figures are long-term averages (TMD table via chiangmai.net, WeatherSpark). The 2026 burn ban (1 Jan to 31 May) is from Thairath reporting of the provincial announcement. -->
 

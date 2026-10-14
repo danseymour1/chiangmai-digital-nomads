@@ -61,6 +61,7 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
                 href={`/${post.id}/`}
                 title={post.data.title}
                 description={post.data.description}
+                image={post.data.image}
               />
             </li>
           ))}

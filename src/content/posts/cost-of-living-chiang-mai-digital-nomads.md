@@ -3,6 +3,8 @@ title: "Cost of Living in Chiang Mai for Digital Nomads (2026)"
 description: "What it really costs to live in Chiang Mai as a remote worker — rent, food, coworking and a full monthly budget, with honest numbers for 2026."
 pubDate: 2026-01-20
 tags: ["cost of living"]
+image: "/images/khao-soi.jpg"
+imageAlt: "A bowl of khao soi, Chiang Mai's curry noodle soup, with crispy noodles, pickles, shallots and lime on the side"
 keyAnswer: "A comfortable digital-nomad budget in Chiang Mai is roughly 35,000–55,000 THB per month (about £800–£1,250 / $1,000–$1,550). That covers a modern one-bedroom condo, a mix of local and Western food, a coworking membership, a scooter and a normal social life. Budget-minded nomads live well on less; Nimman-area condos and heavy Western eating push it higher."
 faqs:
   - q: "How much do you need to live in Chiang Mai per month?"
