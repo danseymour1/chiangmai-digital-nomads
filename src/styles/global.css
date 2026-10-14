@@ -1,29 +1,37 @@
 /* =============================================================
-   GLOBAL STYLES  —  "Highland mist & lantern light"
+   GLOBAL STYLES  —  Hallmark "Coral": warm-grey paper, near-black
+   ink, one restrained coral accent, Geist throughout
    The two brand colours come from src/site.config.ts and are
    injected on the <html> tag, so you never edit them here.
    ============================================================= */
 
 :root {
-  --brand: #23423d;
-  --accent: #dd8a2e;
+  --brand: #1a1413;
+  --accent: #de5d50;
 
-  --ink: #1b2620;
-  --ink-soft: #4a574f;
-  --paper: #eff2ec;
-  --paper-raised: #f7f9f4;
-  --mist: #d3ddd3;
-  --mist-deep: #b9c6ba;
+  --ink: #1a1413;
+  --ink-soft: #48403d;
+  --muted: #6f6763;
+  --paper: #f6f2f0;
+  --paper-raised: #ffffff;
+  --paper-2: #efeae8;
+  --paper-3: #e6e0dd;
+  --mist: #e4dfdc;
+  --mist-deep: #d6d0cc;
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --font-display: "Geist", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Geist", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Geist Mono", ui-monospace, monospace;
 
   --measure: 68ch;
   --gap: clamp(1rem, 2.5vw, 2rem);
-  --space-section: clamp(3rem, 8vw, 6rem);
+  --space-section: clamp(3.5rem, 8vw, 6rem);
 
-  --radius: 6px;
-  --shadow: 0 1px 2px rgba(27, 38, 32, 0.06);
+  --radius: 8px;
+  --radius-pill: 999px;
+  --shadow: 0 1px 2px rgba(26, 20, 19, 0.06);
+  --shadow-lift: 0 8px 24px -12px rgba(26, 20, 19, 0.18),
+    0 1px 2px rgba(26, 20, 19, 0.06);
 }
 
 *,
@@ -54,7 +62,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: clamp(1.02rem, 0.98rem + 0.2vw, 1.14rem);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
   line-height: 1.65;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -69,23 +77,27 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 560;
-  line-height: 1.12;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
   color: var(--ink);
   margin: 0 0 0.5em;
-  font-optical-sizing: auto;
 }
 
 h1 {
-  font-size: clamp(2.3rem, 1.6rem + 3.2vw, 4rem);
-  font-weight: 600;
+  font-size: clamp(2.3rem, 1.4rem + 3.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
 }
 h2 {
-  font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.5rem);
+  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 h3 {
-  font-size: clamp(1.3rem, 1.1rem + 0.7vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
+  letter-spacing: -0.015em;
 }
 
 p {
@@ -94,12 +106,14 @@ p {
 
 a {
   color: var(--brand);
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 a:hover {
-  color: var(--accent);
+  color: var(--ink);
+  text-decoration-thickness: 2px;
 }
 
 :focus-visible {
@@ -157,7 +171,7 @@ hr {
   border-left: 3px solid var(--accent);
   font-family: var(--font-display);
   font-size: 1.15em;
-  font-style: italic;
+  font-weight: 500;
   color: var(--ink);
 }
 .prose table {
@@ -185,31 +199,34 @@ main {
 .btn {
   display: inline-block;
   font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.7em 1.35em;
-  border-radius: var(--radius);
-  border: 1.5px solid var(--brand);
+  font-weight: 500;
+  font-size: 0.98rem;
+  letter-spacing: -0.005em;
+  padding: 0.7em 1.4em;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--brand);
   background: var(--brand);
   color: var(--paper-raised);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.15s ease, transform 0.05s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
 }
 .btn:hover {
-  background: color-mix(in srgb, var(--brand) 86%, black);
+  background: color-mix(in srgb, var(--brand) 82%, white);
   color: var(--paper-raised);
 }
 .btn:active {
   transform: translateY(1px);
 }
 .btn--ghost {
-  background: transparent;
-  color: var(--brand);
+  background: var(--paper-raised);
+  border-color: var(--mist-deep);
+  color: var(--ink);
 }
 .btn--ghost:hover {
-  background: color-mix(in srgb, var(--brand) 8%, transparent);
-  color: var(--brand);
+  background: var(--paper-raised);
+  border-color: var(--ink);
+  color: var(--ink);
 }
 
 .sr-only {

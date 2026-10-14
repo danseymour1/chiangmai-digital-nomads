@@ -29,22 +29,28 @@ const isoDate = pubDate.toISOString();
 </article>
 
 <style>
+  /* Coral: refined white card surfaces with a subtle border. */
   .post-card {
-    border-top: 1px solid var(--mist);
+    margin-bottom: 0.75rem;
+    background: var(--paper-raised);
+    border: 1px solid var(--mist);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .post-card:hover {
+    border-color: var(--mist-deep);
+    box-shadow: var(--shadow-lift);
   }
   .post-card-link {
     display: block;
-    padding: 1.7rem 0;
+    padding: clamp(1.2rem, 3vw, 1.6rem) clamp(1.2rem, 3vw, 1.8rem);
     text-decoration: none;
     color: inherit;
   }
   .post-card h3 {
     margin: 0 0 0.4rem;
     color: var(--ink);
-    transition: color 0.15s ease;
-  }
-  .post-card-link:hover h3 {
-    color: var(--brand);
   }
   .post-card-desc {
     margin: 0 0 0.7rem;
@@ -53,24 +59,31 @@ const isoDate = pubDate.toISOString();
   }
   .post-card-meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem 1rem;
     margin: 0;
     font-size: 0.92rem;
     color: var(--ink-soft);
   }
   .post-card-tag {
-    padding: 0.1rem 0.6rem;
-    border: 1px solid var(--mist-deep);
-    border-radius: 999px;
-    font-size: 0.82rem;
+    padding: 0.15rem 0.6rem;
+    background: var(--paper-2);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-label);
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+  }
+  .post-card-meta > * {
+    white-space: nowrap;
   }
   .post-card-read {
     margin-left: auto;
-    color: var(--brand);
-    font-weight: 600;
+    color: var(--ink);
+    font-weight: 500;
   }
-  .post-card-link:hover .post-card-read {
+  .post-card-read::after {
+    content: " →";
     color: var(--accent);
   }
 </style>

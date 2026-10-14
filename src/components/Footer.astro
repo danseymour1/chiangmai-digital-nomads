@@ -39,36 +39,55 @@ const socials = Object.entries(site.social).filter(([, v]) => v);
 </footer>
 
 <style>
+  /* Coral: a restrained footer, a rule above and one line of content. */
   .site-footer {
     margin-top: var(--space-section);
-    border-top: 1px solid var(--mist);
-    background: var(--paper-raised);
-    padding-top: clamp(2.5rem, 6vw, 4rem);
   }
   .footer-inner {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 2.5rem;
-    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    position: relative;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  .footer-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: clamp(1.1rem, 4vw, 2.5rem);
+    right: clamp(1.1rem, 4vw, 2.5rem);
+    border-top: 1px solid var(--mist-deep);
+  }
+  .footer-brand {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.3rem 0.9rem;
   }
   .footer-name {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 0.98rem;
+    letter-spacing: -0.02em;
+    color: var(--ink);
   }
   .footer-brand p {
-    color: var(--ink-soft);
-    max-width: 42ch;
-    margin-top: 0.5rem;
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--muted);
   }
   .footer-social {
     display: flex;
-    gap: 1.1rem;
+    gap: 1rem;
     list-style: none;
-    margin: 0.8rem 0 0;
+    margin: 0;
     padding: 0;
   }
   .footer-social a {
+    font-size: 0.92rem;
     color: var(--ink-soft);
     font-weight: 500;
   }
@@ -76,30 +95,28 @@ const socials = Object.entries(site.social).filter(([, v]) => v);
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    gap: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.4rem;
   }
   .footer-nav a {
     color: var(--ink-soft);
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.92rem;
+    white-space: nowrap;
   }
   .footer-nav a:hover {
-    color: var(--brand);
+    color: var(--ink);
   }
   .footer-legal {
-    border-top: 1px solid var(--mist);
-    padding-block: 1.2rem;
+    padding-bottom: 1.6rem;
   }
   .footer-legal p {
     margin: 0;
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-  }
-  @media (max-width: 640px) {
-    .footer-inner {
-      grid-template-columns: 1fr;
-      gap: 1.8rem;
-    }
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--muted);
   }
 </style>
