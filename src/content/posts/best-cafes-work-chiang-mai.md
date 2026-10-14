@@ -32,6 +32,34 @@ Before the picks, the checklist that matters in Chiang Mai:
 
 The densest cluster by far is **Nimmanhaemin ("Nimman")** — dozens of cafés and coworking spaces within walking distance, which is exactly why so many nomads base themselves nearby. The **Old City** and **Santitham** have their own quieter, often cheaper options.
 
+<!-- VERIFY BEFORE PUBLISHING (Dan): café picks researched October 2026 from recent work-café guides (feel-chiang-mai.com May 2026, offpaththailand.com Sept 2026, acrosseveryborder.com April 2025, nomadicated.com June 2025). Single-source picks to check in person: On The Bread, BeansLiquor, Tora Bake. Ombra has more than one branch and sources disagree on which is which (Chang Phueak / Ratchaphruek Road vs Siri Mangkalajarn Soi 11), so confirm the one described, and its Sunday hours (the Nimman branch closes on Sundays). CAMP's opening hours vary between sources (one says 24 hours). W8 Coffee is also listed as "W8 x Viangpha Cafe". -->
+
+## Which cafés in Nimman are best for working?
+
+Nimman has the most choice, but many of its famous coffee shops are small and built for a quick cup rather than a working day. These are the ones that suit a laptop:
+
+- **On The Bread** (Siri Mangkalajarn Road, Lane 3): quiet and comfortable, with a plug socket at every indoor table and fast wifi. It is small, so give up the table at busy times.
+- **BeansLiquor** (Siri Mangkalajarn Road): large tables and strong wifi, with plug sockets and air-con on the second floor. The top floor gets hot.
+- **Graph One Nimman** (One Nimman): private booth seating and dedicated fibre make it the calmest option for calls. It is the priciest of the group, and booths are worth reserving through Facebook Messenger at peak times.
+- **CAMP at Maya** (5th floor, Maya Lifestyle Shopping Centre): individual work cubbies with a socket at every seat. Wifi access comes with a purchase and runs in two-hour blocks, so buy a drink every couple of hours.
+
+## Where can you work from a café in the Old City?
+
+The Old City is quieter and slower-paced than Nimman, and wifi tends to be slower too. These spots, inside the moat or just outside Tha Phae Gate, are the most workable:
+
+- **Carrot Coffee CNX** (Ratchamanka Road, Soi 7): a two-storey café on a quiet lane, with couches downstairs, work tables upstairs and sockets along the walls. It closes early, so plan for a morning session.
+- **W8 Coffee** (Chang Moi Road): large tables, good natural light, a calm atmosphere and fast wifi. Sockets are scattered and there is no food menu.
+- **Brewginning Coffee** (Chang Moi Road, a short walk from Tha Phae Gate): the air-conditioned back room is usually quiet, with sockets at most tables. The front area is busier with people taking photos.
+- **Akha Ama Phrasingh** (Rachadamnoen Road): good coffee and an upstairs room that suits laptops, but sockets are scarce, so arrive with a full battery and treat it as a shorter stop.
+
+## Which Santitham cafés suit remote workers?
+
+Santitham sits between Nimman and the Old City and has a more local feel. Its work cafés are fewer but well used by remote workers:
+
+- **BOB Coffee** (Maruekkhat Road, Soi 4): the closest thing to a coworking space in café form, with sockets and room to spread out at every table. Wifi is workable rather than fast, and staff expect a fresh order every few hours on a long stay.
+- **Ombra Caffe** (Chang Phueak): a long-standing favourite with the laptop crowd, with several rooms, sockets and a garden. Indoor seats go quickly, so arrive early.
+- **Tora Bake** (attached to One Workspace, Chang Phueak): a relaxed bakery café where each purchase comes with a one-hour wifi pass. Upload speeds can be weak, so it suits focused writing more than video calls.
+
 ## How to work café-style without annoying anyone
 
 Thai café culture is relaxed, but a few habits keep you welcome:

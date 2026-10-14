@@ -33,6 +33,11 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 - Add one specific, real, lived-in detail per item so sections do not feel interchangeable.
 - Keep normal prose for narrative / single-topic posts.
 
+## Recommending specific places
+- When recommending specific places (cafés, coworking, restaurants, etc.) in any post, FIRST check the community stories in src/content/community/ for relevant real mentions and prioritise those, crediting the contributor where it fits.
+- THEN supplement with web research for anything missing.
+- Never invent places. Flag anything uncertain (possibly closed, moved, or unverified details) for me to verify.
+
 ## Internal links
 - Link to other relevant posts where it genuinely helps. Anchor the link on a natural phrase inside a sentence, with no added commentary. Use relative links (/slug/), never a full or workers.dev URL.
 
