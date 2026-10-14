@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../site.config.ts";
 
-const description = `Who's behind ${site.name} and why it exists — an honest, independent guide to remote life in ${site.place}, Thailand.`;
+const description = `Who's behind ${site.name} and why it exists: an honest, independent guide to remote life in ${site.place}, Thailand.`;
 ---
 
 <BaseLayout title="About" description={description} path="/about">
@@ -11,35 +11,32 @@ const description = `Who's behind ${site.name} and why it exists — an honest, 
     <div class="prose">
       <p>
         {site.name} is a small, independent guide for remote workers
-        who are curious about {site.place} — the laid-back, creative
+        who are curious about {site.place}, the laid-back, creative
         hub of northern Thailand and one of the most popular bases for
         digital nomads anywhere.
+      </p>
+
+      <h2>It's a community</h2>
+      <p>
+        The best tips don't come from a single writer. They come from
+        the people living here. Anyone with a story, a hard-won lesson
+        or a favourite spot is welcome to
+        <a href="/community-submit/">share it</a>, and it will be turned
+        into a community story, with credit to them.
       </p>
 
       <h2>Why this site exists</h2>
       <p>
         Most of what you find online about moving here is either years
         out of date or written by someone who spent a long weekend and
-        called it research. We wanted a place that tells you what it's
+        called it research. This site sets out to show what it's
         actually like: what things cost this year, which cafés have
         reliable wifi, how the visa runs really work, and where to find
-        other people doing the same thing.
-      </p>
-
-      <h2>Independent and honest</h2>
-      <p>
-        We're not sponsored and we don't take payment to recommend
-        places. If a café is loud and the coffee is bad, we'll say so.
-        The goal is simple: the guide we wish we'd had before we came.
-      </p>
-
-      <h2>It's a community</h2>
-      <p>
-        The best tips don't come from us — they come from the people
-        living here. If you've got a story, a hard-won lesson, or a
-        favourite spot, we'd love you to
-        <a href="/community-submit/">share it</a>. We'll turn it into a post,
-        with credit to you.
+        other people doing the same thing. A community of nomads sharing
+        their own experiences makes that guidance better and keeps it
+        current, because the people living here notice when prices
+        change, a café closes or a rule shifts long before any guidebook
+        catches up.
       </p>
 
       <p>
@@ -47,6 +44,13 @@ const description = `Who's behind ${site.name} and why it exists — an honest, 
         <a href="/contact">Get in touch</a>.
       </p>
     </div>
+
+    <p class="credit">
+      Created by Dan from <a
+        href="https://danroundtheworld.com/why-i-moved-to-chiang-mai-as-a-digital-nomad/"
+        target="_blank"
+        rel="noopener">Dan Round the World</a>, a full-time digital nomad of over five years who now lives in Chiang Mai.
+    </p>
   </div>
 </BaseLayout>
 
@@ -54,5 +58,19 @@ const description = `Who's behind ${site.name} and why it exists — an honest, 
   .page {
     padding-top: clamp(2.5rem, 6vw, 4.5rem);
     max-width: 48rem;
+  }
+  .credit {
+    max-width: var(--measure);
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--mist);
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+  .credit a {
+    color: var(--ink-soft);
+  }
+  .credit a:hover {
+    color: var(--brand);
   }
 </style>
