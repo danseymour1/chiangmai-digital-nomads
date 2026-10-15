@@ -114,6 +114,10 @@ img {
   display: block;
 }
 
+.prose img {
+  margin-inline: auto;
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--mist);

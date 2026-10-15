@@ -29,7 +29,7 @@ const articleSchema = {
   description: d.description,
   datePublished: d.pubDate.toISOString(),
   inLanguage: site.language,
-  author: { "@type": "Person", name: d.author },
+  author: { "@type": "Person", name: d.author, ...(d.authorUrl && { url: d.authorUrl }) },
   publisher: { "@type": "Organization", name: site.name },
   mainEntityOfPage: new URL(path, site.url).href,
   ...(d.tags.length > 0 && { keywords: d.tags.join(", ") }),
@@ -77,7 +77,7 @@ const breadcrumbSchema = {
       <p class="story-kicker">Community story</p>
       <h1>{d.title}</h1>
       <p class="story-meta">
-        By <strong>{d.author}</strong>
+        By {d.authorUrl ? <a href={d.authorUrl}><strong>{d.author}</strong></a> : <strong>{d.author}</strong>}
         <span aria-hidden="true">·</span>
         <time datetime={d.pubDate.toISOString()}>{dateStr}</time>
       </p>
@@ -101,6 +101,9 @@ const breadcrumbSchema = {
 
     <div class="prose story-body">
       <Content />
+      {d.authorUrl && (
+        <p>Find out more about me <a href={d.authorUrl}>here</a>.</p>
+      )}
     </div>
 
     <footer class="story-foot">
@@ -168,7 +171,7 @@ const breadcrumbSchema = {
   .story-cover {
     width: 100%;
     border-radius: var(--radius);
-    margin: 1.8rem 0;
+    margin: 1.8rem auto;
     aspect-ratio: 1200 / 630;
     object-fit: cover;
   }

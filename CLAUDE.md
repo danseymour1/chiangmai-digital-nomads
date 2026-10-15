@@ -63,7 +63,8 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 ## Community stories
 - Reader-submitted stories are NOT guides. Each is one file in src/content/community/ (not src/content/posts/), live at /community/<filename>/ and in the Community page grid only.
 - Frontmatter: title, author (the reader's name/credit), pubDate, description, tags, optional image/imageAlt, draft.
-- The Community page's tag filter is built from the tags used on published stories. Reuse existing tags with the exact same spelling and capitalisation (check the other files in src/content/community/) so they group under one filter; only add a new tag when none fits.
+- The Community page's tag filter is built from the tags used on published stories. Use only the valid tags listed under "Valid community tags" below, spelled exactly the same, so they group under one filter. Never invent a new tag.
+- Always credit the contributor by name. Where they have given their own website or blog URL, link their name or the "By [name]" byline to it as a normal followed link (no rel="nofollow", "ugc" or "sponsored"), so contributors get a genuine backlink.
 - Keep the reader's own first-person voice, lightly tidied (British English, no em-dashes in body text). Don't add facts they didn't give.
 - src/content/community/example-story.md is a placeholder to delete once real stories exist. If deleting the last story, run rm -rf node_modules/.astro .astro before building, or Astro keeps serving the cached entry.
 
@@ -73,3 +74,82 @@ Given a title, create ONE file in src/content/posts/ with frontmatter: title (th
 
 ## Publishing
 - After writing, show me the file, then commit and push. If I say I'm unsure, set draft: true so it stays hidden until I approve.
+
+## Publishing a community submission
+
+A reader's story arrives as a folder (synced from Google Drive) holding one
+`*-story.txt` and their photos — either loose image files or a single `.zip`.
+Turn it into a DRAFT community post as follows.
+
+1. Read the text file. It has this shape:
+
+   Title: <story title>
+   Name: <contributor name>
+   Time in Chiang Mai: <answer>
+   Website/socials: <their URL>
+   Tags: <comma-separated>
+
+   Bio: <short bio>
+
+   Story: <the story, one or more paragraphs>
+
+2. Prepare the photos.
+   - If the folder contains a `.zip`, unzip it first and use the images inside.
+     Ignore the zip afterwards.
+   - Collect every image (.jpg, .jpeg, .png, .heic, .webp). Convert any HEIC to JPG.
+   - Use the HIGHEST-resolution submitted photo as the cover (a small image
+     stretched to hero width looks blurry). If the best available cover is under
+     ~1200px wide, say so in the report so it can be swapped before publishing.
+   - Resize each to max 1600px wide and strip all metadata (EXIF/location).
+   - Save them to `public/images/community/<slug>/` named `<slug>-1.jpg`,
+     `<slug>-2.jpg`, and so on. The first image is the cover.
+   - `<slug>` is the title in lowercase with hyphens, e.g.
+     "Why I moved to Chiang Mai" -> `why-i-moved-to-chiang-mai`.
+     If a post with that slug already exists, append `-2` (then `-3`, and so
+     on) to the slug, and name its image folder and files to match.
+
+3. Create the post at `src/content/community/<slug>.md`, matching the frontmatter
+   format of the existing community posts. Set:
+   - title: the Story title, as given
+   - description: a ~150-character meta summary of the story (site voice, for SEO)
+   - pubDate: today
+   - tags: the submitted Tags, used verbatim from the valid list below. Never
+     invent, rename or remap a tag.
+   - image / imageAlt: the cover photo path and a short description of it
+   - author: the contributor's name
+   - authorUrl: their Website/socials URL. This becomes their byline link and
+     must stay a normal followed link, never nofollow.
+   - draft: true
+
+4. Write the body.
+   - Keep the contributor's own FIRST-PERSON voice. This is their story, not a
+     site guide, so the third-person house rule does NOT apply here. Tidy lightly
+     only: fix typos, British English spelling, remove em-dashes, use ฿ for any
+     baht amounts.
+   - Do not add facts, prices or claims the contributor did not write. Their
+     experience is theirs; leave it as stated.
+   - Credit the contributor near the top (their name, linked to authorUrl).
+   - Work the bio in as a short "About <name>" note at the end. The site adds
+     "Find out more about me here." (linked to authorUrl) under it
+     automatically, so do not write that line in the post.
+   - All images (cover and inline) are centred by the site's CSS.
+   - Space the remaining photos through the story between paragraphs:
+     `![<alt>](/images/community/<slug>/<file>)`.
+
+5. Leave it as a draft. Report the file path and its preview URL
+   (`/community/<slug>`) so it can be checked. Publishing is a manual step:
+   change `draft: true` to `draft: false` once approved.
+
+### Valid community tags
+The only valid community tags are the ones from the Tally form. Use them exactly
+as submitted, spelled exactly like this, with no remapping:
+
+My story, Food and restaurants, Where to stay, Drinks, Work, Community,
+Coworking, Events, What to do, Accommodation, Day trips, Local experience,
+Favourite things, Activity, Hidden gems, Sport, Music, DTV, Visas, Other
+
+### Author backlink (driven by authorUrl)
+When authorUrl is set, the contributor's link appears in two places, both as
+normal followed links: the byline at the top ("By <name>"), and a line under the
+"About <name>" section reading "Find out more about me here." with the link on
+"here". Show neither if authorUrl is empty.

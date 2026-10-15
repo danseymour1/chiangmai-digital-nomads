@@ -38,6 +38,7 @@ const community = defineCollection({
   schema: z.object({
     title: z.string(),
     author: z.string(),
+    authorUrl: z.string().url().optional(),
     pubDate: z.coerce.date(),
     description: z.string(),
     tags: z.array(z.string().trim()).default([]),
