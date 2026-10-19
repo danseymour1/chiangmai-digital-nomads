@@ -47,7 +47,18 @@ const themeStyle = `--brand:${site.theme.brand};--accent:${site.theme.accent};`;
 
     <Seo {...props} />
 
-    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9a560512df1946f2aee5cbc7238b2a92"}'></script><!-- End Cloudflare Web Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TX5T5PPZFV"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TX5T5PPZFV');
+    </script>
   </head>
   <body>
     <a href="#main" class="sr-only">Skip to content</a>
