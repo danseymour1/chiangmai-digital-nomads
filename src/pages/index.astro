@@ -185,7 +185,10 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
     margin-bottom: 1.5rem;
   }
   .newsletter-section {
-    padding-bottom: var(--space-section);
+    padding-top: 2rem;
+  }
+  :global(.site-footer) {
+    margin-top: 2rem;
   }
   .section-link {
     font-weight: 600;

@@ -102,7 +102,54 @@ const ACTION_URL =
     box-shadow: var(--shadow);
   }
   .newsletter--slim {
-    padding: clamp(1.25rem, 3vw, 1.75rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    padding: 1rem clamp(1.1rem, 3vw, 1.75rem);
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--paper-raised);
+  }
+  .newsletter--slim .newsletter-title {
+    flex: 1 1 18rem;
+    margin: 0;
+    color: var(--paper-raised);
+  }
+  .newsletter--slim .newsletter-form {
+    flex: 1 1 22rem;
+  }
+  .newsletter--slim .newsletter-input {
+    background: var(--paper-raised);
+    border-color: var(--paper-raised);
+    color: var(--ink);
+  }
+  .newsletter--slim .newsletter-input::placeholder {
+    color: var(--ink-soft);
+    opacity: 1;
+  }
+  .newsletter--slim .newsletter-input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-color: var(--accent);
+  }
+  .newsletter--slim .newsletter-btn {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+  .newsletter--slim .newsletter-btn:hover {
+    background: color-mix(in srgb, var(--accent) 88%, white);
+    color: var(--ink);
+  }
+  .newsletter--slim .newsletter-error {
+    flex: 1 1 100%;
+    margin: 0;
+    color: #ffd2cc;
+  }
+  .newsletter--slim .newsletter-success {
+    color: var(--paper-raised);
+    font-size: 1.15rem;
   }
   .newsletter--full {
     padding: clamp(1.75rem, 5vw, 3rem);
@@ -113,7 +160,8 @@ const ACTION_URL =
     color: var(--brand);
   }
   .newsletter--slim .newsletter-title {
-    font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem);
+    font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
+    line-height: 1.3;
   }
   .newsletter-text {
     color: var(--ink-soft);
