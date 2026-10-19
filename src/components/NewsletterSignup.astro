@@ -1,0 +1,182 @@
+---
+interface Props {
+  variant?: "slim" | "full";
+}
+
+const { variant = "slim" } = Astro.props;
+const full = variant === "full";
+const id = `newsletter-email-${variant}`;
+const ACTION_URL =
+  "https://assets.mailerlite.com/jsonp/2725058/forms/201766914241857087/subscribe";
+---
+
+<section class={`newsletter newsletter--${variant}`} data-newsletter data-action={ACTION_URL}>
+  {full ? (
+    <>
+      <h2 class="newsletter-title">Join the Chiang Mai Digital Nomads list</h2>
+      <p class="newsletter-text">
+        Get the latest on remote work, visas, cafés, events and community
+        stories in Chiang Mai, straight to your inbox.
+      </p>
+    </>
+  ) : (
+    <h2 class="newsletter-title">
+      Stay up to date with all the digital nomad news in Chiang Mai
+    </h2>
+  )}
+
+  <form class="newsletter-form" method="post" action={ACTION_URL} novalidate>
+    <label class="sr-only" for={id}>Email address</label>
+    <input
+      class="newsletter-input"
+      type="email"
+      id={id}
+      name="fields[email]"
+      placeholder="Your email address"
+      autocomplete="email"
+      required
+    />
+    <input type="hidden" name="ml-submit" value="1" />
+    <input type="hidden" name="anticsrf" value="true" />
+    <button type="submit" class="btn newsletter-btn">Subscribe</button>
+  </form>
+  <p class="newsletter-error" role="alert" hidden></p>
+  <p class="newsletter-success" role="status" tabindex="-1" hidden>
+    Thanks — you're on the list!
+  </p>
+</section>
+
+<script is:inline>
+  (function () {
+    if (window.__newsletterInit) return;
+    window.__newsletterInit = true;
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    document.querySelectorAll('[data-newsletter]').forEach(function (box) {
+      var form = box.querySelector('form');
+      var input = box.querySelector('.newsletter-input');
+      var btn = box.querySelector('.newsletter-btn');
+      var err = box.querySelector('.newsletter-error');
+      var ok = box.querySelector('.newsletter-success');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var email = input.value.trim();
+        if (!email || !EMAIL_RE.test(email)) {
+          err.textContent = 'Please enter a valid email address.';
+          err.hidden = false;
+          input.setAttribute('aria-invalid', 'true');
+          input.focus();
+          return;
+        }
+        err.hidden = true;
+        input.removeAttribute('aria-invalid');
+        btn.disabled = true;
+        fetch(box.getAttribute('data-action'), {
+          method: 'POST',
+          mode: 'no-cors',
+          body: new URLSearchParams({
+            'fields[email]': email,
+            'ml-submit': '1',
+            'anticsrf': 'true'
+          })
+        })
+          .then(function () {
+            form.hidden = true;
+            ok.hidden = false;
+            ok.focus();
+          })
+          .catch(function () {
+            btn.disabled = false;
+            err.textContent = 'Something went wrong. Please try again.';
+            err.hidden = false;
+          });
+      });
+    });
+  })();
+</script>
+
+<style>
+  .newsletter {
+    border: 1px solid var(--mist);
+    border-radius: var(--radius);
+    background: var(--paper-raised);
+    box-shadow: var(--shadow);
+  }
+  .newsletter--slim {
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+  }
+  .newsletter--full {
+    padding: clamp(1.75rem, 5vw, 3rem);
+    max-width: 38rem;
+  }
+  .newsletter-title {
+    margin: 0 0 0.9rem;
+    color: var(--brand);
+  }
+  .newsletter--slim .newsletter-title {
+    font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem);
+  }
+  .newsletter-text {
+    color: var(--ink-soft);
+    font-size: 1.1rem;
+    max-width: 52ch;
+    margin: 0 0 1.4rem;
+  }
+  .newsletter-form {
+    display: flex;
+    gap: 0.6rem;
+  }
+  .newsletter-form[hidden] {
+    display: none;
+  }
+  .newsletter-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    padding: 0.7em 0.9em;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1.5px solid var(--mist-deep);
+    border-radius: var(--radius);
+  }
+  .newsletter-input::placeholder {
+    color: var(--ink-soft);
+    opacity: 0.8;
+  }
+  .newsletter-input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    border-color: var(--brand);
+  }
+  .newsletter-input[aria-invalid="true"] {
+    border-color: #b3261e;
+  }
+  .newsletter-btn {
+    flex: 0 0 auto;
+  }
+  .newsletter-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  .newsletter-error {
+    margin: 0.6rem 0 0;
+    color: #b3261e;
+    font-size: 0.95rem;
+  }
+  .newsletter-error[hidden],
+  .newsletter-success[hidden] {
+    display: none;
+  }
+  .newsletter-success {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--brand);
+    outline: none;
+  }
+  @media (max-width: 34rem) {
+    .newsletter-form {
+      flex-direction: column;
+    }
+  }
+</style>

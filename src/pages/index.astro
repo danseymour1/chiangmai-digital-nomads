@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
 import { site } from "../site.config.ts";
 
 // Guides shown on the home page: the 3 newest, unless you list guide
@@ -109,6 +110,10 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
       </ul>
     </section>
   )}
+
+  <section class="wrap home-section newsletter-section">
+    <NewsletterSignup variant="slim" />
+  </section>
 </BaseLayout>
 
 <style>
@@ -178,6 +183,9 @@ const stories = (await getCollection("community", ({ data }) => !data.draft))
   }
   .section-head--spaced {
     margin-bottom: 1.5rem;
+  }
+  .newsletter-section {
+    padding-bottom: var(--space-section);
   }
   .section-link {
     font-weight: 600;

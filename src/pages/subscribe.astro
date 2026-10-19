@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
+import { site } from "../site.config.ts";
+
+const description = `Subscribe to the ${site.name} email list for updates on remote work, visas, cafés, events and community stories.`;
+---
+
+<BaseLayout title="Subscribe" description={description} path="/subscribe">
+  <div class="wrap page">
+    <h1>Subscribe</h1>
+    <p class="lead">
+      One short email now and then, with what is new for digital nomads in
+      {site.place}. Unsubscribe at any time.
+    </p>
+    <NewsletterSignup variant="full" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    max-width: 42rem;
+  }
+  .lead {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+</style>
