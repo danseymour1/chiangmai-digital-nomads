@@ -23,9 +23,9 @@ Settling into Chiang Mai is straightforward if the basics are done in the right 
 
 ## How do you get from Chiang Mai airport into town?
 
-Most arrivals fly in from Bangkok, though there are also direct flights from Kuala Lumpur, Singapore, Taipei, Seoul and several Chinese cities. Chiang Mai International Airport sits inside the city, about 15 to 20 minutes by car from the Old City and Nimman. The easiest option is a **Grab** or **Bolt** car booked from the arrivals hall, typically around ฿100–200 depending on demand and destination. Grab has a designated pickup point, and the app shows the way to it.
+Most arrivals fly in from Bangkok, though there are also direct flights from Kuala Lumpur, Singapore, Taipei, Seoul and several Chinese cities. Chiang Mai International Airport sits inside the city, about 15 to 20 minutes by car from the Old City and Nimman. The easiest option is a **Grab** car booked from the arrivals hall, typically around ฿100–200 depending on demand and destination. Grab has a designated pickup point, and the app shows the way to it.
 
-The official taxi counter inside arrivals gives a set fare, generally in a similar range, so it is a good fallback if your phone has no data yet. Avoid touts offering rides outside the counter system. Before you fly, complete the Thailand Digital Arrival Card online, which is required for foreign visitors.
+The official taxi counter inside arrivals gives a set fare, generally in a similar range, so it is a good fallback if your phone has no data yet. Avoid touts offering rides outside the counter system. Before you fly, complete the [Thailand Digital Arrival Card](https://tdac.immigration.go.th/arrival-card/#/home) online, which is required for foreign visitors.
 
 ## How do you get a Thai SIM card or eSIM?
 
@@ -39,13 +39,13 @@ A local SIM is one of the first things to buy. **AIS** and **True** (which merge
 
 ## How should you handle cash, ATMs and payments?
 
-Thailand still runs on cash for street food, markets, songthaews and many small shops. Most Thai bank ATMs charge a flat fee of around ฿220–250 per withdrawal on foreign cards, and some machines charge more. The fee appears on screen before you confirm, so check it and withdraw larger amounts less often. Always decline the ATM's offer to convert the transaction into your home currency, as the exchange rate is poor.
+Thailand still runs on cash for street food, markets, songthaews and many small shops. Most Thai bank ATMs charge a flat fee of around ฿220–250 per withdrawal on foreign cards, and some machines charge more. The fee appears on screen before you confirm, so check it and withdraw larger amounts less often. Always decline the ATM's offer to convert the transaction into your home currency, as the exchange rate is poor. Some ATMs limit you to ฿20,000 per withdrawal, while others allow up to ฿30,000, so shop around if you want to take out as much as possible in one go.
 
 Cards are accepted in malls, supermarkets, hotels and most cafés in Nimman. Thai QR payments (PromptPay) are everywhere, but generally require a Thai bank account; tourist wallets such as TAGTHAi offer a workaround, though conditions vary by nationality.
 
 ## Where should you stay first, and how do you find a monthly rental?
 
-Book a hotel, serviced apartment, [coliving room](/best-coliving-spaces-in-chiang-mai/) or Airbnb for the first one or two weeks rather than signing a lease from abroad. That gives you time to visit buildings, compare areas and test the internet speed.
+Book a hotel, serviced apartment, [a room in a coliving](/best-coliving-spaces-in-chiang-mai/) or Airbnb for the first one or two weeks rather than signing a lease from abroad. That gives you time to visit buildings, compare areas and test the internet speed.
 
 Monthly rentals are best found in person: walk into condo buildings and ask at reception, use local Facebook rental groups and listing sites, or use an agent. Never send money before viewing a property, and ask for a written contract. Expect a deposit of one to two months' rent plus the first month in advance, and ask for the electricity rate per unit before signing. For a breakdown of neighbourhoods and typical rents, compare [the best areas to live in Chiang Mai](/best-areas-to-live-in-chiang-mai/) before you start viewing.
 
